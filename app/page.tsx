@@ -62,7 +62,7 @@ export default function Home() {
           Crafting memorable digital <br className='hidden lg:inline'/> experiences with a user centered <br className='hidden lg:inline'/> approach.
         </h1>
         <div className='flex flex-row-reverse mt-5'>
-          <p className='w-full lg:w-1/2 text-slate-500 '>
+          <p className='w-full lg:w-1/2 font-thin '>
             Passionate about user experience design with nearly four years of experience in crafting impactful digital solutions. My focus is on blending attractive aesthetics with intuitive functionality, always with the user at the heart of each design. Throughout my career, I&apos;ve had the privilege of working on various projects that have transformed ideas into remarkable digital experiences.
           </p>
         </div>

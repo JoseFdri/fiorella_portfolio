@@ -121,25 +121,25 @@ export default async function Project({ params }: Props) {
             <div className='font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5'>
               1
             </div>
-            Research
+            {sections.research.title}
           </a>
           <a href="#wireframe" className='flex items-center justify-center md:flex-col md:w-52 text-center mt-5 md:mt-0'>
             <div className='font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5'>
               2
             </div>
-            <span>Wireframe and <br className='hidden md:block'/> architecture</span>
+            {sections.architecture.title}
           </a>
           <a href="#design" className='flex items-center justify-center md:flex-col md:w-52  text-center mt-5 md:mt-0'>
             <div className='font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5'>
               3
             </div>
-            Design
+            {sections.design.title}
           </a>
           <a href="#reflection" className='flex items-center justify-center md:flex-col md:w-52  text-center mt-5 md:mt-0'>
             <div className='font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5'>
               4
             </div>
-            reflection
+            {sections.reflection.title}
           </a>
         </div>
       </section>
@@ -227,7 +227,7 @@ export default async function Project({ params }: Props) {
           )
         })}
       </section>
-      <section className='my-32'>
+      <section className='my-32' id='reflection'>
         <h2 className='text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center'>
           5. {sections.reflection.title}
         </h2>

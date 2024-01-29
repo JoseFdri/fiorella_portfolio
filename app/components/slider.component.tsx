@@ -39,10 +39,11 @@ const Slider: FC<Props> = ({ imageUrls }: Props) => {
                         />
                         <div className="absolute bg-slate-800 md:w-[462px] w-[216px] md:h-[293px] top-[8px] left-[32px] md:top-[15px] md:left-[69px] h-[136px] overflow-y-scroll">
                             <Image
+                                loading='eager'
                                 src={url}
                                 width={300.99}
                                 height={205.71}
-                                alt={'device_template'}
+                                alt={url}
                                 style={{
                                     width: '100%',
                                     height: 'auto',
