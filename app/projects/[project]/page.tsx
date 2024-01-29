@@ -23,7 +23,7 @@ export default async function Project({ params }: Props) {
   const { project } = params;
   const data = await getData(project);
   const { details, sections } = data;
-  
+
   return (
     <main className="flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl flex-col lg:px-0 items-center justify-center">
       <section className="flex lg:mt-44 w-full">
@@ -194,8 +194,8 @@ export default async function Project({ params }: Props) {
               <h3 className='text-1xl md:text-2xl my-10 font-bold '>
                 {section.title}
               </h3>
-              {section.images.map((imgUrl)=> (
-                <div className='md:w-full my-5'>
+              {section.images.map((imgUrl, i)=> (
+                <div className='md:w-full my-5' key={i}>
                   <Image
                     src={imgUrl}
                     width={1200}

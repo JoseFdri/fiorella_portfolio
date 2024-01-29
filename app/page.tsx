@@ -21,7 +21,6 @@ const projects = [
     role: 'UX|UI',
     description: 'Rockerbox is a company that provides forms to businesses so that their employees can access state benefits, such as tax reductions or other privileges.',
     imgUrl: '/images/rockerbox.png', 
-    
   },
   {
     name: 'Requirements',
@@ -64,7 +63,7 @@ export default function Home() {
         </h1>
         <div className='flex flex-row-reverse mt-5'>
           <p className='w-full lg:w-1/2 text-slate-500 '>
-            Passionate about user experience design with nearly four years of experience in crafting impactful digital solutions. My focus is on blending attractive aesthetics with intuitive functionality, always with the user at the heart of each design. Throughout my career, I've had the privilege of working on various projects that have transformed ideas into remarkable digital experiences.
+            Passionate about user experience design with nearly four years of experience in crafting impactful digital solutions. My focus is on blending attractive aesthetics with intuitive functionality, always with the user at the heart of each design. Throughout my career, I&apos;ve had the privilege of working on various projects that have transformed ideas into remarkable digital experiences.
           </p>
         </div>
       </section>
@@ -86,6 +85,7 @@ export default function Home() {
 
             return (
               <Cards
+                key={i}
                 sizes='(max-width: 1500px) 80w'
                 width={717.99}
                 height={505.71}
