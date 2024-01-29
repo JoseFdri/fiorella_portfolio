@@ -8,9 +8,8 @@ type NavBarProps = {
 const NavBar: FC<NavBarProps> = ({fontSize = ''}: NavBarProps) => {
     return (
         <div className={`${fontSize} flex flex-col w-full lg:w-auto lg:mt-0 lg:flex-row`}>
-          <span className='lg:px-5 font-medium'>Work</span>
-          <span className='lg:px-5'>About</span>
-          <span className='lg:pl-5'>Contact</span>
+          <Link href={'/'} className='lg:px-5 font-medium'>Home</Link>
+          <a href='https://www.linkedin.com/in/fiorellavelazcollanos/' target="_blank" className='lg:px-5 font-thin'>Linkedin Profile</a>
         </div>
     )
 }

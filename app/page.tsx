@@ -1,8 +1,14 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import Cards from '@/app/components/cards.component';
 
 const projects = [
+  {
+    name: 'Export Portal',
+    role: 'UR | UX',
+    file_name: "exportemos",
+    description: 'Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.',
+    imgUrl: '/images/portal.png',
+  },
   {
     name: 'Trume',
     role: 'UX|UI',
@@ -22,12 +28,6 @@ const projects = [
     role: 'UX|UI',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
     imgUrl: '/images/requirements.png',
-  },
-  {
-    name: 'Export Portal',
-    role: 'UR | UX',
-    description: 'Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.',
-    imgUrl: '/images/portal.png',
   },
   {
     name: 'Turismo In',
@@ -54,7 +54,6 @@ const projects = [
     imgUrl: '/images/eol.png',
   }
 ];
-
 
 export default function Home() {
   return (
@@ -90,7 +89,7 @@ export default function Home() {
                 sizes='(max-width: 1500px) 80w'
                 width={717.99}
                 height={505.71}
-                project={project} 
+                project={project}
                 subClasses={subClasses}
                 classes={classes}
               />

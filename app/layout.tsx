@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={`${inter.className} flex items-center flex-col`}>
+    <html lang="en" style={{scrollBehavior: 'smooth'}}>
+      <body className={`${inter.className} flex items-center flex-col overflow-x-hidden`}>
         <nav className='w-full py-8 lg:justify-center lg:flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl'>
           <div className='w-full flex flex-col lg:flex-row lg:px-0 justify-center lg:justify-between'>
             <div className='mb-5 lg:mb-0'>
@@ -33,7 +33,7 @@ export default function RootLayout({
           <div className='w-full lg:w-11/12 lg:justify-center lg:flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:py-10 lg:flex-row-reverse lg:flex-row flex flex-col lg:justify-between items-center lg:px-0 mt-5 lg:mt-0'>
             <NavBar/>
             <span className='mt-5 lg:mt-0'>
-              © 2023  All rights reserved.
+              © {new Date().getFullYear()}  All rights reserved.
             </span>
           </div>
         </footer>
