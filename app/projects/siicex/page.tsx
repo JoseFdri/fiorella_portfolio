@@ -635,7 +635,7 @@ export default async function Project() {
       </section>
       <section className="md:mt-28 mt-16 w-full">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">First Insight</h3>
-        <h4 className="text-1xl md:text-3xl mb-10 font-extralight text-center">
+        <h4 className="text-1xl md:text-3xl mb-10 text-center md:font-thin">
         &quot;The information they share with us is very generic; we want something
           with specialized sources.&quot;
         </h4>
@@ -702,7 +702,7 @@ export default async function Project() {
       </section>
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">Second Insight</h3>
-        <h4 className="text-1xl md:text-3xl mb-10 font-extraligh text-center">
+        <h4 className="text-1xl md:text-3xl mb-10 md:font-thin text-center">
         &quot;PromPerú has a lot of valuable information for exports, but despite
           that, it&apos;s difficult to navigate and find what I need.&quot;
         </h4>
@@ -769,7 +769,7 @@ export default async function Project() {
       </section>
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">Third Insight</h3>
-        <h4 className="text-1xl md:text-3xl mb-10 font-extraligh text-center">
+        <h4 className="text-1xl md:text-3xl mb-10 md:font-thin text-center">
         &quot;We are known for being very visual; we don&apos;t read much anymore.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
