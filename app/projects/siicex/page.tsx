@@ -49,7 +49,7 @@ export default async function Project() {
               read due to its complexity and an outdated, unappealing design.
               The main goal is to attract new registered users and encourage
               existing ones to consume the content. A redesign of the
-              newsletter's design and presentation is proposed to make the
+              newsletter&apos;s design and presentation is proposed to make the
               information more accessible, engaging, and understandable, thus
               improving the user experience.
             </p>
@@ -226,7 +226,7 @@ export default async function Project() {
             <ul className="list-disc pl-5 md:mt-16">
               <li>
                 They emphasize the importance of aligning the information with
-                our country's offerings and ensuring relevance to our reality,
+                our country&apos;s offerings and ensuring relevance to our reality,
                 avoiding the mere replication of product launches from other
                 countries, which may not be beneficial for Peruvian exporters.
               </li>
@@ -285,7 +285,7 @@ export default async function Project() {
         <ul className="list-disc pl-5 md:mt-16">
           <li>
             Each attendee had to complete a questionnaire with questions about
-            their company's experience, roles, and, most importantly, their user
+            their company&apos;s experience, roles, and, most importantly, their user
             experience with the newsletter.
           </li>
           <li className="mt-2">
@@ -636,11 +636,11 @@ export default async function Project() {
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">First Insights</h3>
         <h4 className="text-1xl md:text-3xl mb-10 font-thin text-center">
-          "The information they share with us is very generic; we want something
-          with specialized sources."
+        &quot;The information they share with us is very generic; we want something
+          with specialized sources.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
-          "Industry Segmentation"
+        &quot;Industry Segmentation&quot;
         </div>
 
         <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
@@ -703,32 +703,32 @@ export default async function Project() {
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">Second Insights</h3>
         <h4 className="text-1xl md:text-3xl mb-10 font-thin text-center">
-          "PromPerú has a lot of valuable information for exports, but despite
-          that, it's difficult to navigate and find what I need."
+        &quot;PromPerú has a lot of valuable information for exports, but despite
+          that, it&apos;s difficult to navigate and find what I need.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
-          "They don't find the information they want despite its existence."
+        &quot;They don&apos;t find the information they want despite its existence.&quot;
         </div>
 
         <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
         <p>
-          "The newsletter readers have many activities to carry out in their
+        &quot;The newsletter readers have many activities to carry out in their
           companies, so allocating an extended time for reading the newsletter
-          is impossible for them..."
+          is impossible for them...&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
         <p>
-          "They share with us that when they enter the newsletter and want to
+        &quot;They share with us that when they enter the newsletter and want to
           obtain information that benefits their businesses, it is very
           difficult for them to reach it since it is not segmented according to
           the interests of their sector. Due to the lack of time, they cannot
           review all the articles, which harms them as they recognize that
-          PromPerú provides valuable and reliable information."
+          PromPerú provides valuable and reliable information.&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
         <p>
-          "Providing a newsletter with segmented information so that readers can
-          quickly find content of interest to them."
+        &quot;Providing a newsletter with segmented information so that readers can
+          quickly find content of interest to them.&quot;
         </p>
         <div className="text-1xl md:text-2xl my-10 font-bold">
           Motivations vs. Pain Points
@@ -742,8 +742,8 @@ export default async function Project() {
                 Receive information validated by export specialists.
               </li>
               <li className="mt-2">
-                Reading the newsletter regularly can help them stay informed
-                about PromPerú's activities that benefit their company."
+              Reading the newsletter regularly can help them stay informed
+                about PromPerú&apos;s activities that benefit their company.
               </li>
             </ul>
           </div>
@@ -752,7 +752,7 @@ export default async function Project() {
             <ul className="list-disc pl-5 md:mt-16">
               <li>
                 The organization of information is inadequate and does not
-                highlight topics of interest for the exporter.{" "}
+                highlight topics of interest for the exporter.
               </li>
               <li className="mt-2">
                 The information is unappealing, with very small images, and the
@@ -770,29 +770,29 @@ export default async function Project() {
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">Third Insights</h3>
         <h4 className="text-1xl md:text-3xl mb-10 font-thin text-center">
-          "We are known for being very visual; we don't read much anymore."
+        &quot;We are known for being very visual; we don&apos;t read much anymore.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
-          "They assimilate information better in a dosed manner."
+        &quot;They assimilate information better in a dosed manner.&quot;
         </div>
         <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
         <p>
-          "Users have told us that they no longer read or find textual
+        &quot;Users have told us that they no longer read or find textual
           information less appealing. They prefer to see infographics, graphics,
-          and other dynamic visual materials."
+          and other dynamic visual materials.&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
         <p>
-          "The newsletter information has too much text, small images, lacks
+        &quot;The newsletter information has too much text, small images, lacks
           visuals within the news, and infographics are not immediately visible
           but need to be searched for. Infographics are equally hidden as the
-          newsletters within SIICEX."
+          newsletters within SIICEX.&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
         <p>
-          "Enhance the way information is conveyed in the newsletter with
+        &quot;Enhance the way information is conveyed in the newsletter with
           statistical graphics, brief information capsules, infographics,
-          presentations, animations, videos, etc."
+          presentations, animations, videos, etc.&quot;
         </p>
         <div className="text-1xl md:text-2xl my-10 font-bold">
           Motivations vs. Pain Points
@@ -819,7 +819,7 @@ export default async function Project() {
             <ul className="list-disc pl-5 md:mt-16">
               <li>
                 TThere is nothing visually appealing in the newsletter to
-                capture their attention.{" "}
+                capture their attention.
               </li>
               <li className="mt-2">
                 They do not assimilate information as well as they would with
