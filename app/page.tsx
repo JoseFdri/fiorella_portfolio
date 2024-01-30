@@ -5,9 +5,16 @@ const projects = [
   {
     name: 'Export Portal',
     role: 'UR | UX',
-    file_name: "exportemos",
+    slug: "exportemos",
     description: 'Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.',
     imgUrl: '/images/portal.png',
+  },
+  {
+    name: 'Newsletters SIICEX',
+    role: 'UX | UI',
+    slug: "siicex",
+    description: 'Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.',
+    imgUrl: '/images/siicex.png',
   },
   {
     name: 'Trume',
@@ -45,12 +52,6 @@ const projects = [
     role: 'UX | UI',
     description: 'I redesigned a CMS to streamline employee time tracking and job function recording.',
     imgUrl: '/images/manager.png',
-  },
-  {
-    name: 'KeepltSaved',
-    role: 'UX | UI',
-    description: 'Creation of an application where senior citizens or individuals with serious illnesses can record important personal information.',
-    imgUrl: '/images/eol.png',
   }
 ];
 
