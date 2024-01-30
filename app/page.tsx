@@ -3,18 +3,18 @@ import Cards from '@/app/components/cards.component';
 
 const projects = [
   {
-    name: 'Export Portal',
-    role: 'UR | UX',
-    slug: "exportemos",
-    description: 'Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.',
-    imgUrl: '/images/portal.png',
-  },
-  {
     name: 'Newsletters SIICEX',
     role: 'UX | UI',
     slug: "siicex",
     description: 'Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.',
     imgUrl: '/images/siicex.png',
+  },
+  {
+    name: 'Export Portal',
+    role: 'UR | UX',
+    slug: "exportemos",
+    description: 'Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.',
+    imgUrl: '/images/portal.png',
   },
   {
     name: 'Trume',

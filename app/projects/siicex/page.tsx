@@ -280,7 +280,7 @@ export default async function Project() {
       </section>
       <section className="w-full mt-10 md:mt-20">
         <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          1. Workshop: Questionnaire
+          Workshop: Questionnaire
         </h3>
         <ul className="list-disc pl-5 md:mt-16">
           <li>
@@ -378,7 +378,7 @@ export default async function Project() {
       </section>
       <section className="w-full mt-10 md:mt-20">
         <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          2. Workshop: Content Evaluation
+          Workshop: Content Evaluation
         </h3>
         <p>
           For this exercise, participants were asked to assess a series of
@@ -425,7 +425,7 @@ export default async function Project() {
       </section>
       <section className="w-full mt-10 md:mt-20">
         <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          3. Workshop: Sharing of information
+          Workshop: Sharing of information
         </h3>
         <ul className="list-disc pl-5 ">
           <li>
@@ -455,7 +455,7 @@ export default async function Project() {
       </section>
       <section className="w-full mt-10 md:mt-20">
         <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          4. Workshop: Ideal Newsletter
+          Workshop: Ideal Newsletter
         </h3>
         <ul className="list-disc pl-5 ">
           <li>
@@ -633,8 +633,8 @@ export default async function Project() {
           </div>
         </div>
       </section>
-      <section className="md:mt-28 mt-16 w-full" id="conclusions">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">First Insights</h3>
+      <section className="md:mt-28 mt-16 w-full">
+        <h3 className="text-1xl md:text-2xl mb-5 font-bold">First Insight</h3>
         <h4 className="text-1xl md:text-3xl mb-10 font-thin text-center">
         &quot;The information they share with us is very generic; we want something
           with specialized sources.&quot;
@@ -701,7 +701,7 @@ export default async function Project() {
         </p>
       </section>
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Second Insights</h3>
+        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Second Insight</h3>
         <h4 className="text-1xl md:text-3xl mb-10 font-thin text-center">
         &quot;PromPerú has a lot of valuable information for exports, but despite
           that, it&apos;s difficult to navigate and find what I need.&quot;
@@ -768,7 +768,7 @@ export default async function Project() {
         </p>
       </section>
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Third Insights</h3>
+        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Third Insight</h3>
         <h4 className="text-1xl md:text-3xl mb-10 font-thin text-center">
         &quot;We are known for being very visual; we don&apos;t read much anymore.&quot;
         </h4>
