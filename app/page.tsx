@@ -7,14 +7,14 @@ const projects = [
     role: 'UX | UI',
     slug: "siicex",
     description: 'Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.',
-    imgUrl: '/images/siicex.png',
+    imgUrl: '/images/siicex.jpg',
   },
   {
     name: 'Export Portal',
     role: 'UR | UX',
     slug: "exportemos",
     description: 'Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.',
-    imgUrl: '/images/portal.png',
+    imgUrl: '/images/portal.jpg',
   },
   {
     name: 'Trume',
@@ -27,19 +27,19 @@ const projects = [
     name: 'Rockerbox',
     role: 'UX|UI',
     description: 'Rockerbox is a company that provides forms to businesses so that their employees can access state benefits, such as tax reductions or other privileges.',
-    imgUrl: '/images/rockerbox.png', 
+    imgUrl: '/images/rockerbox.jpg', 
   },
   {
     name: 'Requirements',
     role: 'UX|UI',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-    imgUrl: '/images/requirements.png',
+    imgUrl: '/images/requirements.jpg',
   },
   {
     name: 'Turismo In',
     role: 'UR | UX',
     description: 'Web redesign aimed at promoting tourism in Peru for students and professionals, enhancing usability and information.',
-    imgUrl: '/images/turismo.png',
+    imgUrl: '/images/turismo.jpg',
   },
   {
     name: 'YOY Lima Box Park',
@@ -51,7 +51,7 @@ const projects = [
     name: 'Mow Managers',
     role: 'UX | UI',
     description: 'I redesigned a CMS to streamline employee time tracking and job function recording.',
-    imgUrl: '/images/manager.png',
+    imgUrl: '/images/manager.jpg',
   }
 ];
 
