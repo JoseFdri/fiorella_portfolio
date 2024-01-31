@@ -226,9 +226,10 @@ export default async function Project() {
             <ul className="list-disc pl-5 md:mt-16">
               <li>
                 They emphasize the importance of aligning the information with
-                our country&apos;s offerings and ensuring relevance to our reality,
-                avoiding the mere replication of product launches from other
-                countries, which may not be beneficial for Peruvian exporters.
+                our country&apos;s offerings and ensuring relevance to our
+                reality, avoiding the mere replication of product launches from
+                other countries, which may not be beneficial for Peruvian
+                exporters.
               </li>
               <li className="mt-2">
                 The new design should allow readers to select content of
@@ -285,8 +286,8 @@ export default async function Project() {
         <ul className="list-disc pl-5 md:mt-16">
           <li>
             Each attendee had to complete a questionnaire with questions about
-            their company&apos;s experience, roles, and, most importantly, their user
-            experience with the newsletter.
+            their company&apos;s experience, roles, and, most importantly, their
+            user experience with the newsletter.
           </li>
           <li className="mt-2">
             This questionnaire allowed them to express which is the most
@@ -636,11 +637,11 @@ export default async function Project() {
       <section className="md:mt-28 mt-16 w-full">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">First Insight</h3>
         <h4 className="text-1xl md:text-3xl mb-10 text-center md:font-thin">
-        &quot;The information they share with us is very generic; we want something
-          with specialized sources.&quot;
+          &quot;The information they share with us is very generic; we want
+          something with specialized sources.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
-        &quot;Industry Segmentation&quot;
+          &quot;Industry Segmentation&quot;
         </div>
 
         <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
@@ -703,23 +704,25 @@ export default async function Project() {
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">Second Insight</h3>
         <h4 className="text-1xl md:text-3xl mb-10 md:font-thin text-center">
-        &quot;PromPerú has a lot of valuable information for exports, but despite
-          that, it&apos;s difficult to navigate and find what I need.&quot;
+          &quot;PromPerú has a lot of valuable information for exports, but
+          despite that, it&apos;s difficult to navigate and find what I
+          need.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
-        &quot;They don&apos;t find the information they want despite its existence.&quot;
+          &quot;They don&apos;t find the information they want despite its
+          existence.&quot;
         </div>
 
         <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
         <p>
-        &quot;The newsletter readers have many activities to carry out in their
-          companies, so allocating an extended time for reading the newsletter
-          is impossible for them...&quot;
+          &quot;The newsletter readers have many activities to carry out in
+          their companies, so allocating an extended time for reading the
+          newsletter is impossible for them...&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
         <p>
-        &quot;They share with us that when they enter the newsletter and want to
-          obtain information that benefits their businesses, it is very
+          &quot;They share with us that when they enter the newsletter and want
+          to obtain information that benefits their businesses, it is very
           difficult for them to reach it since it is not segmented according to
           the interests of their sector. Due to the lack of time, they cannot
           review all the articles, which harms them as they recognize that
@@ -727,8 +730,8 @@ export default async function Project() {
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
         <p>
-        &quot;Providing a newsletter with segmented information so that readers can
-          quickly find content of interest to them.&quot;
+          &quot;Providing a newsletter with segmented information so that
+          readers can quickly find content of interest to them.&quot;
         </p>
         <div className="text-1xl md:text-2xl my-10 font-bold">
           Motivations vs. Pain Points
@@ -742,7 +745,7 @@ export default async function Project() {
                 Receive information validated by export specialists.
               </li>
               <li className="mt-2">
-              Reading the newsletter regularly can help them stay informed
+                Reading the newsletter regularly can help them stay informed
                 about PromPerú&apos;s activities that benefit their company.
               </li>
             </ul>
@@ -770,27 +773,28 @@ export default async function Project() {
       <section className="md:mt-28 mt-16 w-full" id="conclusions">
         <h3 className="text-1xl md:text-2xl mb-5 font-bold">Third Insight</h3>
         <h4 className="text-1xl md:text-3xl mb-10 md:font-thin text-center">
-        &quot;We are known for being very visual; we don&apos;t read much anymore.&quot;
+          &quot;We are known for being very visual; we don&apos;t read much
+          anymore.&quot;
         </h4>
         <div className="text-1xl md:text-2xl mb-10 font-bold">
-        &quot;They assimilate information better in a dosed manner.&quot;
+          &quot;They assimilate information better in a dosed manner.&quot;
         </div>
         <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
         <p>
-        &quot;Users have told us that they no longer read or find textual
+          &quot;Users have told us that they no longer read or find textual
           information less appealing. They prefer to see infographics, graphics,
           and other dynamic visual materials.&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
         <p>
-        &quot;The newsletter information has too much text, small images, lacks
-          visuals within the news, and infographics are not immediately visible
-          but need to be searched for. Infographics are equally hidden as the
-          newsletters within SIICEX.&quot;
+          &quot;The newsletter information has too much text, small images,
+          lacks visuals within the news, and infographics are not immediately
+          visible but need to be searched for. Infographics are equally hidden
+          as the newsletters within SIICEX.&quot;
         </p>
         <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
         <p>
-        &quot;Enhance the way information is conveyed in the newsletter with
+          &quot;Enhance the way information is conveyed in the newsletter with
           statistical graphics, brief information capsules, infographics,
           presentations, animations, videos, etc.&quot;
         </p>
@@ -852,9 +856,7 @@ export default async function Project() {
             "/images/projects/siicex/wireframes/wireframe_5.jpg",
           ]}
         />
-        <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">
-        Mockup
-        </h3>
+        <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">Mockup</h3>
         <Slider
           imageUrls={[
             "/images/projects/siicex/mockups/mockup_1.png",
@@ -864,8 +866,8 @@ export default async function Project() {
             "/images/projects/siicex/mockups/mockup_5.png",
           ]}
         />
-         <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">
-        Prototype
+        <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">
+          Prototype
         </h3>
         <Slider
           imageUrls={[
