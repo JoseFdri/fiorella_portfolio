@@ -37,6 +37,7 @@ const projects = [
   {
     name: "Trume",
     role: "UX|UI",
+    slug: "trume",
     description:
       "Redesign of an application aimed at enhancing the user experience in patient monitoring and virtual appointment scheduling.",
     imgUrl: "/images/trume.png",
@@ -44,6 +45,7 @@ const projects = [
   {
     name: "Rockerbox",
     role: "UX|UI",
+    slug: "rockerbox",
     description:
       "Rockerbox is a company that provides forms to businesses so that their employees can access state benefits, such as tax reductions or other privileges.",
     imgUrl: "/images/rockerbox.jpg",
@@ -51,6 +53,7 @@ const projects = [
   {
     name: "Turismo In",
     role: "UR | UX",
+    slug: "turismo_in",
     description:
       "Web redesign aimed at promoting tourism in Peru for students and professionals, enhancing usability and information.",
     imgUrl: "/images/turismo.jpg",
@@ -58,6 +61,7 @@ const projects = [
   {
     name: "YOY Lima Box Park",
     role: "UR | UX",
+    slug: "yoy",
     description:
       "I participated in the creation of an application that aims to provide various menu options and the ability to place pre-orders.",
     imgUrl: "/images/yoy.png",
@@ -65,6 +69,7 @@ const projects = [
   {
     name: "Mow Managers",
     role: "UX | UI",
+    slug: "mow_managers",
     description:
       "I redesigned a CMS to streamline employee time tracking and job function recording.",
     imgUrl: "/images/manager.jpg",
