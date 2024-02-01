@@ -2,28 +2,7 @@ import Image from "next/image";
 import Slider from "../../components/slider.component";
 import htmlParser from "html-react-parser";
 
-type Props = {
-  params: {
-    project: string;
-  };
-};
-
-async function getData(fileName: string) {
-  const res = await fetch(`${process.env.BASE_URL}/projects/exportemos.json`);
-
-  if (!res.ok) {
-    // This will activate the closest `error.js` Error Boundary
-    throw new Error("Failed to fetch data");
-  }
-
-  return res.json();
-}
-
-export default async function Project({ params }: Props) {
-  const { project } = params;
-  const data = await getData(project);
-  const { details, sections } = data;
-
+export default async function Project() {
   return (
     <main className="flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl flex-col lg:px-0 items-center justify-center">
       <section className="flex lg:mt-44 w-full">
@@ -41,9 +20,6 @@ export default async function Project({ params }: Props) {
               solution for creating accurate proposals swiftly.
             </p>
             <br />
-            <div className="lg:px-32">
-              <a href={data.link}>{data.link}</a>
-            </div>
           </div>
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
@@ -51,7 +27,7 @@ export default async function Project({ params }: Props) {
                 src="/images/projects/requirements/requirements.jpg"
                 width={500.99}
                 height={505.71}
-                alt={data.title}
+                alt="Requirements"
                 sizes={"(max-width: 1500px) 80w"}
               />
             </picture>
@@ -99,7 +75,13 @@ export default async function Project({ params }: Props) {
           <div>
             <div>
               <div className="font-thin my-5">Client</div>
-              <div className="font-medium leading-loose">Turismo in</div>
+              <a
+                href="https://techgenies.com/"
+                target="_blank"
+                className="font-medium leading-loose"
+              >
+                Techgenies
+              </a>
             </div>
             <div>
               <div className="font-thin my-5">Role</div>
@@ -115,23 +97,20 @@ export default async function Project({ params }: Props) {
           <div>
             <div>
               <div className="font-thin my-5">Tools</div>
-              <div className="font-medium leading-loose">
-                Figma
-                <br />
-                Invision
-              </div>
+              <div className="font-medium leading-loose">Figma</div>
             </div>
           </div>
           <div>
             <div>
               <div className="font-thin my-5">Process</div>
               <div className="leading-loose font-medium">
-                {details.process.map((step: string) => (
-                  <>
-                    {step}
-                    <br />
-                  </>
-                ))}
+                Client Kickoff interview
+                <br />
+                Interviews with stakeholders
+                <br />
+                Benchmark
+                <br />
+                Visual design
               </div>
             </div>
           </div>
@@ -186,20 +165,6 @@ export default async function Project({ params }: Props) {
           solution tailored to the specific needs expressed by the Human
           Resources team.
         </p>
-        <div className="md:flex w-full md:justify-between mt-14 md:mt-20 w-full">
-          <div className="md:w-1/3">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">
-              {sections.research.left_column.title}
-            </h3>
-            {htmlParser(sections.research.left_column.content)}
-          </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
-            <h3 className="text-1xl mb-5 md:text-2xl font-bold">
-              {sections.research.right_column.title}
-            </h3>
-            {htmlParser(sections.research.right_column.content)}
-          </div>
-        </div>
       </section>
       <section className="w-full mb-20 md:mt-32 mt-20" id="design">
         <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center">
