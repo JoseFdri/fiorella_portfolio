@@ -27,6 +27,14 @@ const projects = [
     imgUrl: "/images/casa_andina.jpg",
   },
   {
+    name: "Requirements",
+    role: "UX|UI",
+    slug: "requirements",
+    description:
+      "Led the creation of this tool designed to enhance and optimize the operations of a work team.",
+    imgUrl: "/images/requirements.jpg",
+  },
+  {
     name: "Trume",
     role: "UX|UI",
     description:
@@ -39,13 +47,6 @@ const projects = [
     description:
       "Rockerbox is a company that provides forms to businesses so that their employees can access state benefits, such as tax reductions or other privileges.",
     imgUrl: "/images/rockerbox.jpg",
-  },
-  {
-    name: "Requirements",
-    role: "UX|UI",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    imgUrl: "/images/requirements.jpg",
   },
   {
     name: "Turismo In",

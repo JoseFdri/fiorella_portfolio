@@ -221,7 +221,7 @@ export default async function Project({ params }: Props) {
           }
         )}
       </section>
-      <section className="mt-20 w-full" id="design">
+      <section className="md:mt-32 w-full mt-20" id="design">
         <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center">
           3. {sections.design.title}
         </h2>
@@ -229,7 +229,7 @@ export default async function Project({ params }: Props) {
           (section: { title: string; images: string[] }) => {
             return (
               <>
-                <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">
+                <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">
                   {section.title}
                 </h3>
                 <Slider imageUrls={section.images} />

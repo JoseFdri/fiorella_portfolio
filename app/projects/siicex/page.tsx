@@ -840,11 +840,11 @@ export default async function Project() {
           with valuable insights.
         </p>
       </section>
-      <section className="my-32 w-full" id="design">
+      <section className="mb-20 md:mt-32 w-full" id="design">
         <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center">
           4. Design
         </h2>
-        <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">
+        <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">
           Wireframe
         </h3>
         <Slider
@@ -856,7 +856,7 @@ export default async function Project() {
             "/images/projects/siicex/wireframes/wireframe_5.jpg",
           ]}
         />
-        <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">Mockup</h3>
+        <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">Mockup</h3>
         <Slider
           imageUrls={[
             "/images/projects/siicex/mockups/mockup_1.png",
@@ -866,7 +866,7 @@ export default async function Project() {
             "/images/projects/siicex/mockups/mockup_5.png",
           ]}
         />
-        <h3 className="text-1xl md:text-2xl font-bold mb-24 mt-10">
+        <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">
           Prototype
         </h3>
         <Slider

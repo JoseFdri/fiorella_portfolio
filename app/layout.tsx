@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import NavBar from "@/app/components/navBar.component";
 import Script from "next/script";
 import { Analytics } from "@vercel/analytics/react";
-import TrackableLink from './components/trackable-link.component';
+import Link from 'next/link'
 
 const inter = Inter({ subsets: ["latin"] });
 const title = "Fiorella Velazco | UX/UI designer";
@@ -48,9 +48,9 @@ export default function RootLayout({
         <nav className="w-full py-8 lg:justify-center lg:flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl">
           <div className="w-full flex flex-col lg:flex-row lg:px-0 justify-center lg:justify-between">
             <div className="mb-5 lg:mb-0">
-              <TrackableLink href={"/"} className="text-2xl lg:text-3xl" trackvalue="click_name">
+              <Link href={"/"} className="text-2xl lg:text-3xl">
                 Fiorella Velazco
-              </TrackableLink>
+              </Link>
             </div>
             <NavBar fontSize="text-1xl lg:text-2xl" />
           </div>
