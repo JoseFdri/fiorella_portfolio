@@ -201,22 +201,22 @@ export default async function Project() {
         </h3>
         <Slider
           imageUrls={[
-            "/images/projects/keepitsaved/prototypes/1.jpg",
-            "/images/projects/keepitsaved/prototypes/2.jpg",
-            "/images/projects/keepitsaved/prototypes/3.jpg",
-            "/images/projects/keepitsaved/prototypes/4.jpg",
-            "/images/projects/keepitsaved/prototypes/5.jpg",
-            "/images/projects/keepitsaved/prototypes/6.jpg",
-            "/images/projects/keepitsaved/prototypes/7.jpg",
-            "/images/projects/keepitsaved/prototypes/8.jpg",
-            "/images/projects/keepitsaved/prototypes/9.jpg",
-            "/images/projects/keepitsaved/prototypes/10.jpg",
-            "/images/projects/keepitsaved/prototypes/11.jpg",
-            "/images/projects/keepitsaved/prototypes/12.jpg",
-            "/images/projects/keepitsaved/prototypes/13.jpg",
-            "/images/projects/keepitsaved/prototypes/14.jpg",
-            "/images/projects/keepitsaved/prototypes/15.jpg",
-            "/images/projects/keepitsaved/prototypes/16.jpg",
+              "/images/projects/keepitsaved/prototypes/4.jpg",
+              "/images/projects/keepitsaved/prototypes/6.jpg",
+              "/images/projects/keepitsaved/prototypes/16.jpg",
+              "/images/projects/keepitsaved/prototypes/15.jpg",
+              "/images/projects/keepitsaved/prototypes/14.jpg",
+              "/images/projects/keepitsaved/prototypes/5.jpg",
+              "/images/projects/keepitsaved/prototypes/7.jpg",
+              "/images/projects/keepitsaved/prototypes/3.jpg",
+              "/images/projects/keepitsaved/prototypes/8.jpg",
+              "/images/projects/keepitsaved/prototypes/9.jpg",
+              "/images/projects/keepitsaved/prototypes/10.jpg",
+              "/images/projects/keepitsaved/prototypes/11.jpg",
+              "/images/projects/keepitsaved/prototypes/12.jpg",
+              "/images/projects/keepitsaved/prototypes/13.jpg",
+              "/images/projects/keepitsaved/prototypes/2.jpg",
+              "/images/projects/keepitsaved/prototypes/1.jpg",
           ]}
         />
       </section>
