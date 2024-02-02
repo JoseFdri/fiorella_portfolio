@@ -35,6 +35,14 @@ const projects = [
     imgUrl: "/images/requirements.jpg",
   },
   {
+    name: "KeepItSaved",
+    role: "UX|UI",
+    slug: "keepitsaved",
+    description:
+      "An application that aims to manage crucial documents and digital assets in an intuitive and secure environment, enabling users to effectively handle their vital information.",
+    imgUrl: "/images/keepitsaved.jpg",
+  },
+  {
     name: "Trume",
     role: "UX|UI",
     slug: "trume",
