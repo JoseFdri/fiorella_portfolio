@@ -1,4 +1,4 @@
-import { notFound } from 'next/navigation'
+import { notFound } from "next/navigation";
 import { projects } from "../../constants";
 
 type Props = {
@@ -10,7 +10,7 @@ type Props = {
 export default async function Project({ params }: Props) {
   const { project } = params;
   if (!projects.find((x) => x.slug === project)) {
-    return notFound()
+    return notFound();
   }
 
   return (

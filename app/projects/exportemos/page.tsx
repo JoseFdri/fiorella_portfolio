@@ -1,14 +1,37 @@
 import Image from "next/image";
 import Slider from "../../components/slider.component";
 import htmlParser from "html-react-parser";
+import type { Metadata, ResolvingMetadata } from "next";
+import { author } from "../../constants";
 
 type Props = {
-  params: {
-    project: string;
-  };
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
 };
+const projectName = "Exportemos.pe";
+const title = `${projectName} | ${author}`;
 
-async function getData(fileName: string) {
+export async function generateMetadata(
+  _: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const parentMetaData = await parent;
+  const description = `This website aims to provide information to exporters, students, and administrators on export-related topics, with the goal of informing and boosting exports in Peru. In the design, we will focus on creating an intuitive experience that addresses the specific needs of each user group, making it easy for users to search for and understand key information related to exports.`;
+  const previousImages = parentMetaData.openGraph?.images || [];
+
+  return {
+    title: projectName,
+    description,
+    openGraph: {
+      images: ["images/projects/exportemos/project_img.png", ...previousImages],
+      siteName: title,
+      title: title,
+      description,
+    },
+  };
+}
+
+async function getData() {
   const res = await fetch(`${process.env.BASE_URL}/projects/exportemos.json`);
 
   if (!res.ok) {
@@ -19,9 +42,8 @@ async function getData(fileName: string) {
   return res.json();
 }
 
-export default async function Project({ params }: Props) {
-  const { project } = params;
-  const data = await getData(project);
+export default async function Project() {
+  const data = await getData();
   const { details, sections } = data;
 
   return (
@@ -41,6 +63,7 @@ export default async function Project({ params }: Props) {
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
               <Image
+                priority={true}
                 src={data.project_img}
                 width={500.99}
                 height={505.71}

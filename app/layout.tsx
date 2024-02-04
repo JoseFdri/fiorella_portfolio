@@ -10,14 +10,20 @@ const inter = Inter({ subsets: ["latin"] });
 const title = "Fiorella Velazco | UX/UI designer";
 const description = `Passionate about user experience design with nearly four years of experience in crafting impactful digital solutions. My focus is on blending attractive aesthetics with intuitive functionality, always with the user at the heart of each design. Throughout my career, I've had the privilege of working on various projects that have transformed ideas into remarkable digital experiences.`;
 
+const titleTemplate =  {
+  template: "%s | Fiorella Velazco",
+  default: title
+}
+
 export const metadata: Metadata = {
-  title,
+  metadataBase: new URL('https://fiorella-portfolio.vercel.app'),
+  title: titleTemplate,
   description,
   openGraph: {
     siteName: title,
     title,
     description,
-    images: ["https://fiorella-portfolio.vercel.app/images/cover_img.jpeg"],
+    images: ["/images/cover_img.jpeg"],
     type: "website",
   },
   robots: {

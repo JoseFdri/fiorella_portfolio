@@ -1,6 +1,42 @@
 import Image from "next/image";
 import Slider from "../../components/slider.component";
-import htmlParser from "html-react-parser";
+import type { Metadata, ResolvingMetadata } from "next";
+import { author } from "../../constants";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+const projectName = "Requirements";
+const title = `${projectName} | ${author}`;
+
+export async function generateMetadata(
+  _: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const parentMetaData = await parent;
+  const description = `We introduce an intuitive platform designed for the Human
+  Resources team, streamlining project registration and expediting
+  budgetary estimate generation. This automated tool enhances
+  efficiency by considering the complexity and unique
+  functionalities of each project, providing a comprehensive
+  solution for creating accurate proposals swiftly.`;
+  const previousImages = parentMetaData.openGraph?.images || [];
+
+  return {
+    title: projectName,
+    description,
+    openGraph: {
+      images: [
+        "/images/projects/requirements/requirements.jpg",
+        ...previousImages,
+      ],
+      siteName: title,
+      title: title,
+      description,
+    },
+  };
+}
 
 export default async function Project() {
   return (
@@ -24,6 +60,7 @@ export default async function Project() {
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
               <Image
+                priority={true}
                 src="/images/projects/requirements/requirements.jpg"
                 width={500.99}
                 height={505.71}

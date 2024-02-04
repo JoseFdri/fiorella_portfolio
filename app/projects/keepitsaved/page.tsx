@@ -1,5 +1,43 @@
 import Image from "next/image";
 import Slider from "../../components/slider.component";
+import type { Metadata, ResolvingMetadata } from "next";
+import { author } from "../../constants";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+const projectName = "KeepItSaved";
+const title = `${projectName} | ${author}`;
+
+export async function generateMetadata(
+  _: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const parentMetaData = await parent;
+  const description = `Keep It Saved is a cloud-based service designed to provide a
+  secure and convenient solution for storing and managing your most
+  important documents and digital assets. Whether it&apos;s wills,
+  trusts, contracts, or powers of attorney (POA), you can upload
+  various items and keep them all in a secure place. It also allows
+  you to do the same with your online accounts and passwords,
+  eliminating the need to remember each detail.`;
+  const previousImages = parentMetaData.openGraph?.images || [];
+
+  return {
+    title: projectName,
+    description,
+    openGraph: {
+      images: [
+        "/images/projects/keepitsaved/keepitsaved.jpg",
+        ...previousImages,
+      ],
+      siteName: title,
+      title: title,
+      description,
+    },
+  };
+}
 
 export default async function Project() {
   return (
@@ -24,6 +62,7 @@ export default async function Project() {
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
               <Image
+                priority={true}
                 src="/images/projects/keepitsaved/keepitsaved.jpg"
                 width={500.99}
                 height={505.71}
@@ -200,22 +239,22 @@ export default async function Project() {
         </h3>
         <Slider
           imageUrls={[
-              "/images/projects/keepitsaved/prototypes/4.jpg",
-              "/images/projects/keepitsaved/prototypes/6.jpg",
-              "/images/projects/keepitsaved/prototypes/16.jpg",
-              "/images/projects/keepitsaved/prototypes/15.jpg",
-              "/images/projects/keepitsaved/prototypes/14.jpg",
-              "/images/projects/keepitsaved/prototypes/5.jpg",
-              "/images/projects/keepitsaved/prototypes/7.jpg",
-              "/images/projects/keepitsaved/prototypes/3.jpg",
-              "/images/projects/keepitsaved/prototypes/8.jpg",
-              "/images/projects/keepitsaved/prototypes/9.jpg",
-              "/images/projects/keepitsaved/prototypes/10.jpg",
-              "/images/projects/keepitsaved/prototypes/11.jpg",
-              "/images/projects/keepitsaved/prototypes/12.jpg",
-              "/images/projects/keepitsaved/prototypes/13.jpg",
-              "/images/projects/keepitsaved/prototypes/2.jpg",
-              "/images/projects/keepitsaved/prototypes/1.jpg",
+            "/images/projects/keepitsaved/prototypes/4.jpg",
+            "/images/projects/keepitsaved/prototypes/6.jpg",
+            "/images/projects/keepitsaved/prototypes/16.jpg",
+            "/images/projects/keepitsaved/prototypes/15.jpg",
+            "/images/projects/keepitsaved/prototypes/14.jpg",
+            "/images/projects/keepitsaved/prototypes/5.jpg",
+            "/images/projects/keepitsaved/prototypes/7.jpg",
+            "/images/projects/keepitsaved/prototypes/3.jpg",
+            "/images/projects/keepitsaved/prototypes/8.jpg",
+            "/images/projects/keepitsaved/prototypes/9.jpg",
+            "/images/projects/keepitsaved/prototypes/10.jpg",
+            "/images/projects/keepitsaved/prototypes/11.jpg",
+            "/images/projects/keepitsaved/prototypes/12.jpg",
+            "/images/projects/keepitsaved/prototypes/13.jpg",
+            "/images/projects/keepitsaved/prototypes/2.jpg",
+            "/images/projects/keepitsaved/prototypes/1.jpg",
           ]}
         />
       </section>

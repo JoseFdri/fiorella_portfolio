@@ -1,5 +1,37 @@
 import Image from "next/image";
 import Slider from "../../components/slider.component";
+import type { Metadata, ResolvingMetadata } from "next";
+import { author } from "../../constants";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+const projectName = "Newsletters SIICEX";
+const title = `${projectName} | ${author}`;
+
+export async function generateMetadata(
+  _: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const parentMetaData = await parent;
+  const description = ` This newsletter website aims to provide crucial information to all
+  registered users on the export portal, keeping them up-to-date
+  with relevant data to encourage and support exporters by offering
+  tips for their success.`;
+  const previousImages = parentMetaData.openGraph?.images || [];
+
+  return {
+    title: projectName,
+    description,
+    openGraph: {
+      images: ["/images/projects/siicex/siicex.png", ...previousImages],
+      siteName: title,
+      title: title,
+      description,
+    },
+  };
+}
 
 export default async function Project() {
   return (
@@ -21,6 +53,7 @@ export default async function Project() {
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
               <Image
+                priority={true}
                 src="/images/projects/siicex/siicex.png"
                 width={500.99}
                 height={505.71}

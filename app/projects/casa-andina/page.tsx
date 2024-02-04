@@ -1,4 +1,36 @@
 import Image from "next/image";
+import type { Metadata, ResolvingMetadata } from "next";
+import { author } from "../../constants";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+const projectName = "Casa Andina";
+const title = `${projectName} | ${author}`;
+
+export async function generateMetadata(
+  _: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const parentMetaData = await parent;
+  const description = `Casa Andina, a Peruvian hotel chain committed to providing exceptional travel experiences, is undertaking a redesign project focused on enhancing user experience, with a particular emphasis on responsive design.`;
+  const previousImages = parentMetaData.openGraph?.images || [];
+
+  return {
+    title: projectName,
+    description,
+    openGraph: {
+      images: [
+        "/images/projects/casa-andina/casa_andina.png",
+        ...previousImages,
+      ],
+      siteName: title,
+      title: title,
+      description,
+    },
+  };
+}
 
 export default async function Project() {
   return (
@@ -10,12 +42,10 @@ export default async function Project() {
               Casa Andina
             </h1>
             <p className="lg:px-32">
-              This website aims to provide information to exporters, students,
-              and administrators on export-related topics, with the goal of
-              informing and boosting exports in Peru. In the design, we will
-              focus on creating an intuitive experience that addresses the
-              specific needs of each user group, making it easy for users to
-              search for and understand key information related to exports.
+              Casa Andina, a Peruvian hotel chain committed to providing
+              exceptional travel experiences, is undertaking a redesign project
+              focused on enhancing user experience, with a particular emphasis
+              on responsive design.
             </p>
             <br />
             <div className="lg:px-32">
@@ -27,6 +57,7 @@ export default async function Project() {
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
               <Image
+                priority={true}
                 src="/images/projects/casa-andina/casa_andina.png"
                 width={500.99}
                 height={505.71}
@@ -179,13 +210,13 @@ export default async function Project() {
               Functional Recommendations
             </h3>
             <p>
-              We believe it&apos;s crucial to highlight key components, such as the
-              booking engine and search filters, to enhance the user experience
-              and encourage conversions. Implementing generic search tags will
-              optimize search and indexing in search engines. Additionally, we
-              propose making the contact form more visible, simplifying access
-              for better lead capture and avoiding user time loss in the current
-              site navigation.
+              We believe it&apos;s crucial to highlight key components, such as
+              the booking engine and search filters, to enhance the user
+              experience and encourage conversions. Implementing generic search
+              tags will optimize search and indexing in search engines.
+              Additionally, we propose making the contact form more visible,
+              simplifying access for better lead capture and avoiding user time
+              loss in the current site navigation.
             </p>
           </div>
         </div>
@@ -208,11 +239,11 @@ export default async function Project() {
           </div>
           <div className="mt-10 md:mt-0 md:w-1/3 md:pt-12">
             <p>
-              The redesign of Casa Andina&apos;s website aims to enhance the brand
-              experience by capturing its essence and creating a recognizable
-              identity beyond the logo. The trapezoid shape will be creatively
-              used to showcase images, textures, and colors, serving as a
-              storytelling element. The focus on customer feedback and the
+              The redesign of Casa Andina&apos;s website aims to enhance the
+              brand experience by capturing its essence and creating a
+              recognizable identity beyond the logo. The trapezoid shape will be
+              creatively used to showcase images, textures, and colors, serving
+              as a storytelling element. The focus on customer feedback and the
               incorporation of a dedicated section for positive experiences are
               integral parts of the redesign, contributing to the humanization
               of the brand.

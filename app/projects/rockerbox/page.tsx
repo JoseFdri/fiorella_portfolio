@@ -1,5 +1,39 @@
 import Image from "next/image";
 import Slider from "../../components/slider.component";
+import type { Metadata, ResolvingMetadata } from "next";
+import { author } from "../../constants";
+
+type Props = {
+  params: { id: string };
+  searchParams: { [key: string]: string | string[] | undefined };
+};
+const projectName = "RockerBox";
+const title = `${projectName} | ${author}`;
+
+export async function generateMetadata(
+  _: Props,
+  parent: ResolvingMetadata
+): Promise<Metadata> {
+  const parentMetaData = await parent;
+  const description = `This project aims to streamline employees&apos; access to
+  government benefits in the United States through an intuitive and
+  easy-to-complete questionnaire. The design focuses on optimizing
+  the user experience to ensure clear and efficient participation,
+  ensuring that all employees can access benefits for which they may
+  qualify, regardless of their needs and abilities.`;
+  const previousImages = parentMetaData.openGraph?.images || [];
+
+  return {
+    title: projectName,
+    description,
+    openGraph: {
+      images: ["/images/projects/rockerbox/rockerbox.jpg", ...previousImages],
+      siteName: title,
+      title: title,
+      description,
+    },
+  };
+}
 
 export default async function Project() {
   return (
@@ -21,6 +55,7 @@ export default async function Project() {
           <div className="my-10 lg:w-96 flex justify-center">
             <picture>
               <Image
+                priority={true}
                 src="/images/projects/rockerbox/rockerbox.jpg"
                 width={500.99}
                 height={505.71}
