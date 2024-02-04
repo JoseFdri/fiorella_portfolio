@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Slider from "../../components/slider.component";
-import htmlParser from "html-react-parser";
 
 export default async function Project() {
   return (
