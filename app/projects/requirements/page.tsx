@@ -82,7 +82,7 @@ export default async function Project() {
           enhancing efficiency and accuracy in proposal creation.
         </p>
         <div className="flex flex-col lg:mt-16 lg:flex-row">
-          <div className="lg:pr-20">
+          <div className="md:w-2/4 md:pr-10">
             <h2 className="text-2xl mb-5 font-bold mt-8">Problem</h2>
             <p>
               The Human Resources team faces significant challenges in
@@ -92,7 +92,7 @@ export default async function Project() {
               time and accuracy.
             </p>
           </div>
-          <div className="lg:pl-20">
+          <div className="md:pl-10 md:w-2/4">
             <h2 className="text-2xl mb-5 font-bold mt-8">Solution</h2>
             <p>
               To overcome these challenges, we introduce an intuitive platform

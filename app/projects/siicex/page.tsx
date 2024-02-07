@@ -74,7 +74,7 @@ export default async function Project() {
           information.
         </p>
         <div className="flex flex-col lg:mt-16 lg:flex-row">
-          <div className="lg:pr-20">
+          <div className="md:w-2/4 md:pr-10">
             <h2 className="text-2xl mb-5 font-bold mt-8">Problem</h2>
             <p>
               SIICEX newsletters have a significant audience of registered
@@ -87,7 +87,7 @@ export default async function Project() {
               improving the user experience.
             </p>
           </div>
-          <div className="lg:pl-20">
+          <div className="md:pl-10 md:w-2/4">
             <h2 className="text-2xl mb-5 font-bold mt-8">Solution</h2>
             <p>
               A review of the design and presentation of the newsletter is
@@ -232,7 +232,7 @@ export default async function Project() {
           experience on the export platform.
         </p>
         <div className="md:flex w-full md:justify-between mt-14 md:mt-20 w-full">
-          <div className="md:w-1/3">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">
               Interviews with stakeholders
             </h3>
@@ -255,7 +255,7 @@ export default async function Project() {
               </li>
             </ul>
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
+          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
             <ul className="list-disc pl-5 md:mt-16">
               <li>
                 They emphasize the importance of aligning the information with
@@ -278,7 +278,7 @@ export default async function Project() {
           </div>
         </div>
       </section>
-      <section className="w-full flex justify-center flex-col items-center">
+      <section className="w-full flex justify-center flex-col items-center mt-10">
         <div className="w-32 my-5">
           <Image
             src={"/images/spacework.png"}
@@ -700,7 +700,7 @@ export default async function Project() {
           Motivations vs. Pain Points
         </div>
         <div className="md:flex w-full md:justify-between my-8 w-full">
-          <div className="md:w-1/3">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">Motivations</h3>
             <ul className="list-disc pl-5 md:mt-16">
               <li>Enhancing knowledge</li>
@@ -716,7 +716,7 @@ export default async function Project() {
               </li>
             </ul>
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
+          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">Pain Points</h3>
             <ul className="list-disc pl-5 md:mt-16">
               <li>Lack of specialized information.</li>
@@ -770,7 +770,7 @@ export default async function Project() {
           Motivations vs. Pain Points
         </div>
         <div className="md:flex w-full md:justify-between my-8 w-full">
-          <div className="md:w-1/3">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">Motivations</h3>
             <ul className="list-disc pl-5 md:mt-16">
               <li>They want to know the content provided by PromPerú.</li>
@@ -783,7 +783,7 @@ export default async function Project() {
               </li>
             </ul>
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
+          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">Pain Points</h3>
             <ul className="list-disc pl-5 md:mt-16">
               <li>
@@ -835,7 +835,7 @@ export default async function Project() {
           Motivations vs. Pain Points
         </div>
         <div className="md:flex w-full md:justify-between my-8 w-full">
-          <div className="md:w-1/3">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">Motivations</h3>
             <ul className="list-disc pl-5 md:mt-16">
               <li>View information quickly.</li>
@@ -851,7 +851,7 @@ export default async function Project() {
               clearer.
             </span>
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
+          <div className="mt-10 md:pl-10 md:w-2/4">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">Pain Points</h3>
             <ul className="list-disc pl-5 md:mt-16">
               <li>

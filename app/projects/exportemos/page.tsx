@@ -23,7 +23,7 @@ export async function generateMetadata(
     title: projectName,
     description,
     openGraph: {
-      images: ["images/projects/exportemos/project_img.png", ...previousImages],
+      images: ["/images/projects/exportemos/project_img.png", ...previousImages],
       siteName: title,
       title: title,
       description,
@@ -181,13 +181,13 @@ export default async function Project() {
         </div>
         {htmlParser(sections.research.content)}
         <div className="md:flex w-full md:justify-between mt-14 md:mt-20 w-full">
-          <div className="md:w-1/3">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">
               {sections.research.left_column.title}
             </h3>
             {htmlParser(sections.research.left_column.content)}
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
+          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
             <h3 className="text-1xl mb-5 md:text-2xl font-bold">
               {sections.research.right_column.title}
             </h3>

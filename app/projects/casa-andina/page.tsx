@@ -76,7 +76,7 @@ export default async function Project() {
           focus on mobile usability.
         </p>
         <div className="flex flex-col lg:mt-16 lg:flex-row">
-          <div className="lg:pr-20">
+          <div className="md:w-2/4 md:pr-10">
             <h2 className="text-2xl mb-5 font-bold mt-8">Problem</h2>
             <p>
               Upon evaluating the original website, we identified serious
@@ -86,7 +86,7 @@ export default async function Project() {
               locate information, leading to confusion.
             </p>
           </div>
-          <div className="lg:pl-20">
+          <div className="md:pl-10 md:w-2/4">
             <h2 className="text-2xl mb-5 font-bold mt-8">Solution</h2>
             <p>
               To tackle these challenges, we propose a comprehensive redesign of
@@ -176,7 +176,7 @@ export default async function Project() {
       </section>
       <section id="immersion">
         <div className="flex justify-center">
-          <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16">
+          <h2 className="text-2xl md:text-5xl mb-10 font-bold md:w-2/4 text-center">
             1. Inmersion
           </h2>
         </div>
@@ -191,8 +191,8 @@ export default async function Project() {
           for young users, anticipating that mobile bookings will exceed 50%
           according to industry trends.
         </p>
-        <div className="md:flex w-full md:justify-between mt-14 md:mt-20 w-full">
-          <div className="md:w-1/3">
+        <div className="md:flex w-full md:justify-between w-full mt-10">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">
               Strategic recommendations
             </h3>
@@ -205,7 +205,7 @@ export default async function Project() {
               is suggested to enhance the value proposition.
             </p>
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3">
+          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">
               Functional Recommendations
             </h3>
@@ -221,7 +221,7 @@ export default async function Project() {
           </div>
         </div>
         <div className="md:flex w-full md:justify-between mt-14 md:mt-20 w-full">
-          <div className="md:w-1/3">
+          <div className="md:w-2/4 md:pr-10">
             <h3 className="text-1xl md:text-2xl mb-5 font-bold">
               Interviews with stakeholders
             </h3>
@@ -237,7 +237,7 @@ export default async function Project() {
               distinctive values while avoiding an overly luxurious perception.
             </p>
           </div>
-          <div className="mt-10 md:mt-0 md:w-1/3 md:pt-12">
+          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4 md:pt-12">
             <p>
               The redesign of Casa Andina&apos;s website aims to enhance the
               brand experience by capturing its essence and creating a

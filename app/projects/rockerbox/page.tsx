@@ -69,18 +69,10 @@ export default async function Project() {
       <section className="flex flex-col w-full">
         <h2 className="text-2xl mb-5 font-bold lg:mt-32 lg:mb-16">Overview</h2>
         <p>
-          Este proyecto se centra en la simplificación del acceso de los
-          empleados a los beneficios gubernamentales en Estados Unidos a través
-          de un cuestionario diseñado con enfoque intuitivo y facilidad de
-          completar. El objetivo es garantizar la participación clara y
-          eficiente de todos los empleados, independientemente de sus
-          habilidades y necesidades, facilitando el acceso a los beneficios para
-          los que puedan calificar. La implementación de una interfaz amigable y
-          la optimización de la experiencia del usuario son aspectos
-          fundamentales para asegurar la inclusión y la efectividad del sistema.
+        This project focuses on simplifying employees&apos; access to government benefits in the United States through an intuitively designed and easy-to-complete questionnaire. The goal is to ensure clear and efficient participation for all employees, regardless of their skills and needs, facilitating access to benefits they may qualify for. Implementing a user-friendly interface and optimizing the user experience are fundamental aspects to ensure inclusivity and system effectiveness.
         </p>
         <div className="flex flex-col lg:mt-16 lg:flex-row">
-          <div className="lg:pr-20">
+          <div className="md:w-2/4 md:pr-10">
             <h2 className="text-2xl mb-5 font-bold mt-8">Problem</h2>
             <p>
               Existing questionnaires to determine employees&apos; eligibility
@@ -90,7 +82,7 @@ export default async function Project() {
               which they might qualify, creating a need for simplification.
             </p>
           </div>
-          <div className="lg:pl-20">
+          <div className="md:pl-10 md:w-2/4">
             <h2 className="text-2xl mb-5 font-bold mt-8">Solution</h2>
             <p>
               Develop an intuitive and easy-to-understand user interface for the
