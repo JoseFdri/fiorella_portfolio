@@ -9,18 +9,18 @@ type Props = {
 };
 const projectName = "Requirements";
 const title = `${projectName} | ${author}`;
+const description = `We introduce an intuitive platform designed for the Human
+Resources team, streamlining project registration and expediting
+budgetary estimate generation. This automated tool enhances
+efficiency by considering the complexity and unique
+functionalities of each project, providing a comprehensive
+solution for creating accurate proposals swiftly.`;
 
 export async function generateMetadata(
   _: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const parentMetaData = await parent;
-  const description = `We introduce an intuitive platform designed for the Human
-  Resources team, streamlining project registration and expediting
-  budgetary estimate generation. This automated tool enhances
-  efficiency by considering the complexity and unique
-  functionalities of each project, providing a comprehensive
-  solution for creating accurate proposals swiftly.`;
   const previousImages = parentMetaData.openGraph?.images || [];
 
   return {
@@ -28,7 +28,7 @@ export async function generateMetadata(
     description,
     openGraph: {
       images: [
-        "/images/projects/requirements/requirements.jpg",
+        "/images/requirements.jpg",
         ...previousImages,
       ],
       siteName: title,
@@ -45,15 +45,10 @@ export default async function Project() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
             <h1 className="text-3xl mb-10 font-bold lg:text-7xl">
-              Requirements
+              {projectName}
             </h1>
             <p className="lg:px-32">
-              We introduce an intuitive platform designed for the Human
-              Resources team, streamlining project registration and expediting
-              budgetary estimate generation. This automated tool enhances
-              efficiency by considering the complexity and unique
-              functionalities of each project, providing a comprehensive
-              solution for creating accurate proposals swiftly.
+              {description}
             </p>
             <br />
           </div>

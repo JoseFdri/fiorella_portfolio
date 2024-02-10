@@ -8,23 +8,20 @@ type Props = {
 };
 const projectName = "Casa Andina";
 const title = `${projectName} | ${author}`;
+const description = `Casa Andina, a Peruvian hotel chain committed to providing exceptional travel experiences, is undertaking a redesign project focused on enhancing user experience, with a particular emphasis on responsive design.`;
 
 export async function generateMetadata(
   _: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const parentMetaData = await parent;
-  const description = `Casa Andina, a Peruvian hotel chain committed to providing exceptional travel experiences, is undertaking a redesign project focused on enhancing user experience, with a particular emphasis on responsive design.`;
   const previousImages = parentMetaData.openGraph?.images || [];
 
   return {
     title: projectName,
     description,
     openGraph: {
-      images: [
-        "/images/projects/casa-andina/casa_andina.png",
-        ...previousImages,
-      ],
+      images: ["/images/casa_andina.jpg", ...previousImages],
       siteName: title,
       title: title,
       description,
@@ -41,12 +38,7 @@ export default async function Project() {
             <h1 className="text-3xl mb-10 font-bold lg:text-7xl">
               Casa Andina
             </h1>
-            <p className="lg:px-32">
-              Casa Andina, a Peruvian hotel chain committed to providing
-              exceptional travel experiences, is undertaking a redesign project
-              focused on enhancing user experience, with a particular emphasis
-              on responsive design.
-            </p>
+            <p className="lg:px-32">{description}</p>
             <br />
             <div className="lg:px-32">
               <a href="https://www.casa-andina.com/es/home">

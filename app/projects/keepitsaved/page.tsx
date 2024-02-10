@@ -9,19 +9,19 @@ type Props = {
 };
 const projectName = "KeepItSaved";
 const title = `${projectName} | ${author}`;
+const description = `Keep It Saved is a cloud-based service designed to provide a
+secure and convenient solution for storing and managing your most
+important documents and digital assets. Whether it&apos;s wills,
+trusts, contracts, or powers of attorney (POA), you can upload
+various items and keep them all in a secure place. It also allows
+you to do the same with your online accounts and passwords,
+eliminating the need to remember each detail.`;
 
 export async function generateMetadata(
   _: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const parentMetaData = await parent;
-  const description = `Keep It Saved is a cloud-based service designed to provide a
-  secure and convenient solution for storing and managing your most
-  important documents and digital assets. Whether it&apos;s wills,
-  trusts, contracts, or powers of attorney (POA), you can upload
-  various items and keep them all in a secure place. It also allows
-  you to do the same with your online accounts and passwords,
-  eliminating the need to remember each detail.`;
   const previousImages = parentMetaData.openGraph?.images || [];
 
   return {
@@ -29,7 +29,7 @@ export async function generateMetadata(
     description,
     openGraph: {
       images: [
-        "/images/projects/keepitsaved/keepitsaved.jpg",
+        "/images/keepitsaved.jpg",
         ...previousImages,
       ],
       siteName: title,
@@ -46,16 +46,10 @@ export default async function Project() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
             <h1 className="text-3xl mb-10 font-bold lg:text-7xl">
-              KeepItSaved
+              {projectName}
             </h1>
             <p className="lg:px-32">
-              Keep It Saved is a cloud-based service designed to provide a
-              secure and convenient solution for storing and managing your most
-              important documents and digital assets. Whether it&apos;s wills,
-              trusts, contracts, or powers of attorney (POA), you can upload
-              various items and keep them all in a secure place. It also allows
-              you to do the same with your online accounts and passwords,
-              eliminating the need to remember each detail.
+              {description}
             </p>
             <br />
           </div>

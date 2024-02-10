@@ -9,16 +9,19 @@ type Props = {
 };
 const projectName = "Turismo In";
 const title = `${projectName} | ${author}`;
+const description = `Turismo In is a platform dedicated to promoting tourism in Peru by
+providing tools and information for teachers, students, and
+industry professionals. The primary focus is to enhance the user
+experience through a redesign aimed at optimizing accessibility
+and effectiveness of the platform, delivering a more intuitive and
+enriching experience for all users involved in the promotion and
+exploration of Peruvian tourism.`;
 
 export async function generateMetadata(
   _: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const parentMetaData = await parent;
-  const description = `We aim to enhance the user experience, focusing on simplicity and
-  clarity. Increase engagement, particularly for exporters, educators,
-  and students promoting Peruvian tourism, optimizing resources for
-  maximum impact.`;
   const previousImages = parentMetaData.openGraph?.images || [];
 
   return {
@@ -43,13 +46,7 @@ export default async function Project() {
               {projectName}
             </h1>
             <p className="lg:px-32">
-              Turismo In is a platform dedicated to promoting tourism in Peru by
-              providing tools and information for teachers, students, and
-              industry professionals. The primary focus is to enhance the user
-              experience through a redesign aimed at optimizing accessibility
-              and effectiveness of the platform, delivering a more intuitive and
-              enriching experience for all users involved in the promotion and
-              exploration of Peruvian tourism.
+              {description}
             </p>
             <br />
             <div className="lg:px-32">

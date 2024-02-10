@@ -9,23 +9,23 @@ type Props = {
 };
 const projectName = "Newsletters SIICEX";
 const title = `${projectName} | ${author}`;
+const description = ` This newsletter website aims to provide crucial information to all
+registered users on the export portal, keeping them up-to-date
+with relevant data to encourage and support exporters by offering
+tips for their success.`;
 
 export async function generateMetadata(
   _: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const parentMetaData = await parent;
-  const description = ` This newsletter website aims to provide crucial information to all
-  registered users on the export portal, keeping them up-to-date
-  with relevant data to encourage and support exporters by offering
-  tips for their success.`;
   const previousImages = parentMetaData.openGraph?.images || [];
 
   return {
     title: projectName,
     description,
     openGraph: {
-      images: ["/images/projects/siicex/siicex.png", ...previousImages],
+      images: ["/images/siicex.jpg", ...previousImages],
       siteName: title,
       title: title,
       description,
@@ -40,13 +40,10 @@ export default async function Project() {
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
             <h1 className="text-3xl mb-10 font-bold lg:text-7xl">
-              Newsletters SIICEX
+              {projectName}
             </h1>
             <p className="lg:px-32">
-              This newsletter website aims to provide crucial information to all
-              registered users on the export portal, keeping them up-to-date
-              with relevant data to encourage and support exporters by offering
-              tips for their success.
+              {description}
             </p>
             <br />
           </div>

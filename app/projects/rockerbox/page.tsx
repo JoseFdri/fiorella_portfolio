@@ -9,25 +9,25 @@ type Props = {
 };
 const projectName = "RockerBox";
 const title = `${projectName} | ${author}`;
+const description = `This project aims to streamline employees&apos; access to
+government benefits in the United States through an intuitive and
+easy-to-complete questionnaire. The design focuses on optimizing
+the user experience to ensure clear and efficient participation,
+ensuring that all employees can access benefits for which they may
+qualify, regardless of their needs and abilities.`;
 
 export async function generateMetadata(
   _: Props,
   parent: ResolvingMetadata
 ): Promise<Metadata> {
   const parentMetaData = await parent;
-  const description = `This project aims to streamline employees&apos; access to
-  government benefits in the United States through an intuitive and
-  easy-to-complete questionnaire. The design focuses on optimizing
-  the user experience to ensure clear and efficient participation,
-  ensuring that all employees can access benefits for which they may
-  qualify, regardless of their needs and abilities.`;
   const previousImages = parentMetaData.openGraph?.images || [];
 
   return {
     title: projectName,
     description,
     openGraph: {
-      images: ["/images/projects/rockerbox/rockerbox.jpg", ...previousImages],
+      images: ["/images/rockerbox.jpg", ...previousImages],
       siteName: title,
       title: title,
       description,
@@ -41,14 +41,9 @@ export default async function Project() {
       <section className="flex lg:mt-44 w-full">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
-            <h1 className="text-3xl mb-10 font-bold lg:text-7xl">RockerBox</h1>
+            <h1 className="text-3xl mb-10 font-bold lg:text-7xl">{projectName}</h1>
             <p className="lg:px-32">
-              This project aims to streamline employees&apos; access to
-              government benefits in the United States through an intuitive and
-              easy-to-complete questionnaire. The design focuses on optimizing
-              the user experience to ensure clear and efficient participation,
-              ensuring that all employees can access benefits for which they may
-              qualify, regardless of their needs and abilities.
+              {description}
             </p>
             <br />
           </div>
