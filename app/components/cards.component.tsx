@@ -27,8 +27,8 @@ const Card: FC<CardProps> = ({
   const { imgUrl, name, role, description, slug } = project;
 
   return (
-    <Link className={classes?.join(" ")} href={`${slug ? `/projects/${slug}` : "#"} `}>
-      <div className={`${subClasses?.join(" ")} relative lg:p-16 p-2 bg-gradient-to-br from-[#151231] to-[#10172f] from-60% to-78% rounded-lg hover:scale-75 transition ease-in-out`}>
+    <Link className={`${classes?.join(" ")} hover:scale-75 transition ease-in-out`} href={`${slug ? `/projects/${slug}` : "#"} `}>
+      <div className={`${subClasses?.join(" ")} relative lg:p-16 p-2 bg-gradient-to-br from-[#151231] to-[#10172f] from-60% to-78% rounded-lg `}>
         <Image
           src={imgUrl}
           height={height}
