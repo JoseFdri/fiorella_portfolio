@@ -32,7 +32,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row flex-wrap">
           {projects.map((project, i) => {
-            const classes = ["lg:my-10", "my-5"];
+            const classes = ["lg:my-20", "my-10"];
             const subClasses = [];
             
             subClasses.push(i % 2 !== 0 ? "lg:ml-10" : "lg:mr-10");

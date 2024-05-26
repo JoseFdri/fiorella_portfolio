@@ -64,7 +64,7 @@ export default function RootLayout({
         {children}
         <Analytics />
         <footer className="w-full flex justify-center">
-          <div className="w-full lg:w-11/12 lg:justify-center lg:flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:py-10 lg:flex-row-reverse lg:flex-row flex flex-col lg:justify-between items-center lg:px-0 mt-5 lg:mt-0">
+          <div className="container lg:justify-center lg:flex lg:py-10 lg:flex-row-reverse lg:flex-row flex flex-col lg:justify-between items-center px-3 mt-5 lg:mt-0">
             <NavBar />
             <span className="mt-5 lg:mt-0">
               © {new Date().getFullYear()} All rights reserved.

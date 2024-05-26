@@ -28,7 +28,7 @@ const Card: FC<CardProps> = ({
 
   return (
     <Link className={classes?.join(" ")} href={`${slug ? `/projects/${slug}` : "#"} `}>
-      <div className={`${subClasses?.join(" ")} relative lg:p-16 p-2 bg-gradient-to-br from-[#231E60] to-[#082C57] from-60% to-78% rounded-lg`}>
+      <div className={`${subClasses?.join(" ")} relative lg:p-16 p-2 bg-gradient-to-br from-[#151231] to-[#10172f] from-60% to-78% rounded-lg hover:scale-75 transition ease-in-out`}>
         <Image
           src={imgUrl}
           height={height}
