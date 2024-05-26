@@ -1,11 +1,19 @@
 export const projects = [
   {
+    name: "Export Portal",
+    role: "UR | UX",
+    slug: "exportemos",
+    description:
+      "Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.",
+    imgUrl: "/images/portal.png",
+  },
+  {
     name: "Turismo In",
     role: "UR | UX",
     slug: "turismo_in",
     description:
       "Web redesign aimed at promoting tourism in Peru for students and professionals, enhancing usability and information.",
-    imgUrl: "/images/turismo.jpg",
+    imgUrl: "/images/turismo.png",
   },
   {
     name: "Newsletters SIICEX",
@@ -13,15 +21,7 @@ export const projects = [
     slug: "siicex",
     description:
       "Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.",
-    imgUrl: "/images/siicex.jpg",
-  },
-  {
-    name: "Export Portal",
-    role: "UR | UX",
-    slug: "exportemos",
-    description:
-      "Web redesign to promote exports in Peru, with structural and content improvements for an effective user experience.",
-    imgUrl: "/images/portal.jpg",
+    imgUrl: "/images/siicex.png",
   },
   {
     name: "Casa Andina",
@@ -29,7 +29,7 @@ export const projects = [
     slug: "casa-andina",
     description:
       "Conducting the research process to guide the website redesign, aiming to enhance the user experience through a user-centric approach focused on their needs and expectations.",
-    imgUrl: "/images/casa_andina.jpg",
+    imgUrl: "/images/casa_andina.png",
   },
   {
     name: "Requirements",
@@ -37,7 +37,7 @@ export const projects = [
     slug: "requirements",
     description:
       "Led the creation of this tool designed to enhance and optimize the operations of a work team.",
-    imgUrl: "/images/requirements.jpg",
+    imgUrl: "/images/requirements.png",
   },
   {
     name: "KeepItSaved",
@@ -45,7 +45,7 @@ export const projects = [
     slug: "keepitsaved",
     description:
       "An application that aims to manage crucial documents and digital assets in an intuitive and secure environment, enabling users to effectively handle their vital information.",
-    imgUrl: "/images/keepitsaved.jpg",
+    imgUrl: "/images/keepitsaved.png",
   },
   {
     name: "RockerBox",
@@ -53,6 +53,6 @@ export const projects = [
     slug: "rockerbox",
     description:
       "This project aims to streamline employees' access to government benefits in the United States through an intuitive and efficient questionnaire.",
-    imgUrl: "/images/rockerbox.jpg",
+    imgUrl: "/images/rockerbox.png",
   },
 ];

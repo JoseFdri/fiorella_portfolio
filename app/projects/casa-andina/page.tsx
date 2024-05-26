@@ -31,7 +31,7 @@ export async function generateMetadata(
 
 export default async function Project() {
   return (
-    <main className="flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl flex-col lg:px-0 items-center justify-center">
+    <main className="flex container flex-col items-center justify-center  px-3">
       <section className="flex lg:mt-44 w-full">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
@@ -91,8 +91,8 @@ export default async function Project() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center lg:mt-44 bg-[#181818] w-screen py-7 mt-20">
-        <div className="w-full lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl md:flex md:justify-between">
+      <section className="flex justify-center lg:mt-44 bg-[#100F1C] w-screen py-7 mt-20 px-3 ">
+        <div className="w-full container md:flex md:justify-between">
           <div>
             <div>
               <div className="font-thin my-5">Client</div>
@@ -135,7 +135,7 @@ export default async function Project() {
           </div>
         </div>
       </section>
-      <section className="flex items-start md:items-center flex-col w-full my-20 md:my-24">
+      <section className="flex items-start md:items-center flex-col w-full my-20 md:my-24 ">
         <div className="md:flex-row flex-col items-start md:items-start flex">
           <a
             href="#immersion"
@@ -166,7 +166,7 @@ export default async function Project() {
           </a>
         </div>
       </section>
-      <section id="immersion">
+      <section id="immersion" >
         <div className="flex justify-center">
           <h2 className="text-2xl md:text-5xl mb-10 font-bold md:w-2/4 text-center">
             1. Inmersion
@@ -254,7 +254,7 @@ export default async function Project() {
           />
         </div>
         <div className="md:flex md:w-[450px] md:justify-center md:items-center">
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] md:py-5">
             7 Stakeholders
           </div>
         </div>

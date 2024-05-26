@@ -14,7 +14,7 @@ export default async function Project({ params }: Props) {
   }
 
   return (
-    <main className="flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl flex-col lg:px-0 items-center justify-center h-[calc(100vh_-_204px)]">
+    <main className="flex container flex-col lg:px-0 items-center justify-center h-[calc(100vh_-_204px)]">
       <section className="flex w-full">
         <div className="flex justify-center">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">

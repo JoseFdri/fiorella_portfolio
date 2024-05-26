@@ -1,44 +1,48 @@
-import Link from 'next/link'
-import { FC } from 'react';
-import Image from 'next/image';
+import Link from "next/link";
+import { FC } from "react";
+import Image from "next/image";
 
 type CardProps = {
-    classes?: string[];
-    subClasses?: string[];
-    height: number;
-    width: number;
-    sizes: string;
-    project: {
-        name: string;
-        slug?: string;
-        role: string;
-        description: string;
-        imgUrl: string;
-    }
-}
-const Card: FC<CardProps> = ({ project, classes, subClasses, width, height, sizes }: CardProps) => {
-    const { imgUrl, name, role, description, slug } = project;
+  classes?: string[];
+  subClasses?: string[];
+  height: number;
+  width: number;
+  sizes: string;
+  project: {
+    name: string;
+    slug?: string;
+    role: string;
+    description: string;
+    imgUrl: string;
+  };
+};
+const Card: FC<CardProps> = ({
+  project,
+  classes,
+  subClasses,
+  width,
+  height,
+  sizes,
+}: CardProps) => {
+  const { imgUrl, name, role, description, slug } = project;
 
-    return (
-        <picture className={classes?.join(' ')}>
-            <div className={subClasses?.join(' ')}>
-                <Link href={`${slug ? `/projects/${slug}`: '#'} `} className={`${ !slug ? 'cursor-default' : ''} opacity-0 hover:opacity-80 transition-all bg-[#212529] absolute w-full h-full flex flex-col justify-center items-center`}>
-                    <div className='lg:w-3/5 flex flex-col justify-center items-center px-2 lg:px-0'>
-                        <h2 className='font-bold lg:text-2xl'>{name}</h2>
-                        <span className='font-medium lg:mb-5 mb-2 mt-2'>{role}</span>
-                        <p className='text-center'>{description}</p>
-                    </div>
-                </Link>
-                <Image
-                    src={imgUrl}
-                    height={height}
-                    width={width}
-                    alt={name}
-                    sizes={sizes}
-                />
-            </div>
-        </picture>
-    )
-}
+  return (
+    <Link className={classes?.join(" ")} href={`${slug ? `/projects/${slug}` : "#"} `}>
+      <div className={`${subClasses?.join(" ")} relative lg:p-16 p-2 bg-gradient-to-br from-[#231E60] to-[#082C57] from-60% to-78% rounded-lg`}>
+        <Image
+          src={imgUrl}
+          height={height}
+          width={width}
+          alt={name}
+          sizes={sizes}
+        />
+      </div>
+      <div className={`flex flex-col lg:mt-10 mt-5 ${subClasses?.join(" ")}`}>
+          <h2 className="font-bold lg:text-4xl text-2xl ">{name}</h2>
+          <p className="lg:text-2xl text-xl font-thin mt-5">{description}</p>
+        </div>
+    </Link>
+  );
+};
 
 export default Card;

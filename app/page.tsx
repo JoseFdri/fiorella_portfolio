@@ -3,16 +3,16 @@ import Cards from "@/app/components/cards.component";
 import { projects } from './constants'
 
 export default function Home() {
+
   return (
-    <main className="flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl flex-col lg:px-0">
+    <main className="flex container flex-col  p-3">
       <section className="flex flex-col lg:mt-48 w-full">
-        <h1 className="lg:text-6xl text-2xl font-bold">
-          Crafting memorable digital <br className="hidden lg:inline" />{" "}
-          experiences with a user centered <br className="hidden lg:inline" />{" "}
+        <h1 className="lg:text-6xl text-2xl font-bold text-center">
+          Crafting memorable digital 
+          experiences with a user centered 
           approach.
         </h1>
-        <div className="flex flex-row-reverse mt-5">
-          <p className="w-full lg:w-1/2 font-thin ">
+        <p className="w-full font-thin lg:mt-20 mt-10 text-lg text-center">
             Passionate about user experience design with nearly four years of
             experience in crafting impactful digital solutions. My focus is on
             blending attractive aesthetics with intuitive functionality, always
@@ -20,7 +20,6 @@ export default function Home() {
             I&apos;ve had the privilege of working on various projects that have
             transformed ideas into remarkable digital experiences.
           </p>
-        </div>
       </section>
       <section className="w-full lg:mt-44 mt-12">
         <div className="flex justify-center lg:mb-24 mb-10">
@@ -33,10 +32,11 @@ export default function Home() {
         </div>
         <div className="flex flex-col lg:flex-row flex-wrap">
           {projects.map((project, i) => {
-            const classes = ["lg:w-1/2", "w-full", "lg:my-10", "my-5"];
-            const subClasses = ["relative", "mx-0"];
-
+            const classes = ["lg:my-10", "my-5"];
+            const subClasses = [];
+            
             subClasses.push(i % 2 !== 0 ? "lg:ml-10" : "lg:mr-10");
+            classes.push([0, 3, 4].includes(i) ? "flex-[0_0_45%]" : "flex-[0_0_55%]");
 
             return (
               <Cards

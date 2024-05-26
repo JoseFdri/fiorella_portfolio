@@ -47,11 +47,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" style={{ scrollBehavior: "smooth" }}>
+    <html lang="en" style={{ scrollBehavior: "smooth" }} className="overflow-x-hidden">
       <body
-        className={`${inter.className} flex items-center flex-col overflow-x-hidden`}
+        className={`${inter.className} flex items-center flex-col overflow-x-hidden bg-gradient-to-b from-[#2E3259] to-[#100F1C] from-0% to-10%`}
       >
-        <nav className="w-full py-8 lg:justify-center lg:flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl">
+        <nav className="w-full py-8 lg:justify-center lg:flex container  px-3">
           <div className="w-full flex flex-col lg:flex-row lg:px-0 justify-center lg:justify-between">
             <div className="mb-5 lg:mb-0">
               <Link href={"/"} className="text-2xl lg:text-3xl">
@@ -63,7 +63,7 @@ export default function RootLayout({
         </nav>
         {children}
         <Analytics />
-        <footer className="w-full bg-[#232323] flex justify-center">
+        <footer className="w-full flex justify-center">
           <div className="w-full lg:w-11/12 lg:justify-center lg:flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:py-10 lg:flex-row-reverse lg:flex-row flex flex-col lg:justify-between items-center lg:px-0 mt-5 lg:mt-0">
             <NavBar />
             <span className="mt-5 lg:mt-0">

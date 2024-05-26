@@ -38,7 +38,7 @@ export async function generateMetadata(
 
 export default async function Project() {
   return (
-    <main className="flex lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl flex-col lg:px-0 items-center justify-center">
+    <main className="flex container flex-col items-center justify-center px-3 ">
       <section className="flex lg:mt-44 w-full">
         <div className="flex flex-col lg:flex-row">
           <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
@@ -97,8 +97,8 @@ export default async function Project() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center lg:mt-44 bg-[#181818] w-screen py-7 mt-20">
-        <div className="w-full lg:w-11/12 max-w-[300px] md:max-w-2xl lg:max-w-screen-xl md:flex md:justify-between">
+      <section className="flex justify-center lg:mt-44 lg:bg-[#100F1C] bg-[#2E3259] w-screen py-7 mt-20 px-3 ">
+        <div className="w-full container md:flex md:justify-between">
           <div>
             <div>
               <div className="font-thin my-5">Client</div>
@@ -422,10 +422,10 @@ export default async function Project() {
           />
         </div>
         <div className="md:flex md:w-[750px] md:justify-between md:items-center">
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] md:py-5">
             3 Tourism and Hospitality students
           </div>
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] mt-3 md:mt-0 md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] mt-3 md:mt-0 md:py-5">
             4 from the private sector
             <br />2 from the public sector
           </div>
@@ -455,7 +455,7 @@ export default async function Project() {
           />
         </div>
         <div className="md:flex md:w-[750px] md:justify-center md:items-center">
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] md:py-5">
             7 Stakeholders
           </div>
         </div>
@@ -556,7 +556,7 @@ export default async function Project() {
           />
         </div>
         <div className="md:flex md:w-[750px] md:justify-center md:items-center">
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] md:py-5">
             9 Students
           </div>
         </div>
@@ -699,10 +699,10 @@ export default async function Project() {
           />
         </div>
         <div className="md:flex md:w-[750px] md:justify-between md:items-center">
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] md:py-5">
             6 Users (Private sector workers)
           </div>
-          <div className="px-10 py-2 rounded-lg  bg-[#1F1E1E] mt-3 md:mt-0 md:py-5">
+          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] mt-3 md:mt-0 md:py-5">
             4 users (Public sector representatives)
           </div>
         </div>
