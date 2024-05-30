@@ -35,879 +35,497 @@ export async function generateMetadata(
 
 export default async function Project() {
   return (
-    <main className="flex container flex-col items-center justify-center px-3 ">
-      <section className="flex lg:mt-44 w-full">
-        <div className="flex flex-col lg:flex-row">
-          <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center">
-            <h1 className="text-3xl mb-10 font-bold lg:text-7xl">
+    <main className="flex flex-col items-center justify-center ">
+      <section className="flex w-full px-3  md:px-5 flex justify-center">
+        <div className="flex flex-col mt-14 items-center">
+          <div className="lg:w-3/4 lg:flex lg:flex-col lg:justify-center text-center">
+            <h1 className="text-2xl mb-3 font-bold lg:text-4xl">
               {projectName}
             </h1>
-            <p className="lg:px-32">
-              {description}
-            </p>
-            <br />
+            <span className="text-xl font-light">Redesign Newsletters</span>
+            <p className=" mt-5 font-light">{description}</p>
           </div>
-          <div className="my-10 lg:w-96 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <picture>
               <Image
                 priority={true}
-                src="/images/projects/siicex/siicex.png"
-                width={500.99}
+                src="/images/projects/siicex/project_cover.png"
+                width={1504}
                 height={505.71}
-                alt="Siicex"
+                alt={projectName}
                 sizes={"(max-width: 1500px) 80w"}
               />
             </picture>
           </div>
         </div>
       </section>
-      <section className="flex flex-col w-full">
-        <h2 className="text-2xl mb-5 font-bold lg:mt-32 lg:mb-16">Overview</h2>
-        <p>
-          The proposal involves redesigning the newsletters, focusing on
-          presenting information in a clear and organized manner. The goal is to
-          attract more users to register and consume the content, thereby
-          enhancing their experience and understanding of the provided
-          information.
-        </p>
-        <div className="flex flex-col lg:mt-16 lg:flex-row">
-          <div className="md:w-2/4 md:pr-10">
-            <h2 className="text-2xl mb-5 font-bold mt-8">Problem</h2>
-            <p>
-              SIICEX newsletters have a significant audience of registered
-              users, but they face the challenge that the content is not being
-              read due to its complexity and an outdated, unappealing design.
-              The main goal is to attract new registered users and encourage
-              existing ones to consume the content. A redesign of the
-              newsletter&apos;s design and presentation is proposed to make the
-              information more accessible, engaging, and understandable, thus
-              improving the user experience.
-            </p>
-          </div>
-          <div className="md:pl-10 md:w-2/4">
-            <h2 className="text-2xl mb-5 font-bold mt-8">Solution</h2>
-            <p>
-              A review of the design and presentation of the newsletter is
-              proposed to make the information more accessible, appealing, and
-              understandable, aiming to enhance the user experience.
-              Additionally, the goal is to allow user interaction, encouraging
-              the contribution of relevant and helpful information.
-            </p>
-          </div>
-        </div>
-      </section>
-      <section className="flex justify-center lg:mt-44 bg-[#100F1C] w-screen py-7 mt-20 px-3 ">
-        <div className="w-full container md:flex md:justify-between">
-          <div>
-            <div>
-              <div className="font-thin my-5">Client</div>
-              <div className="font-medium leading-loose">PromPeru</div>
-            </div>
-            <div>
-              <div className="font-thin my-5">Role</div>
-              <div className="font-medium leading-loose">
-                UX & UI Designer on a team of 2
-              </div>
-            </div>
-            <div>
-              <div className="font-thin my-5">Duration</div>
-              <div className="font-medium leading-loose">1 month</div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div className="font-thin my-5">Tools</div>
-              <div className="font-medium leading-loose">
-                Figma
-                <br />
-                Invision
-              </div>
-            </div>
-          </div>
-          <div>
-            <div>
-              <div className="font-thin my-5">Process</div>
-              <div className="leading-loose font-medium">
-                Client Kickoff interview
-                <br />
-                Benchmark and good practices
-                <br />
-                Interviews with stakeholders
-                <br />
-                Workshop
-                <br />
-                Sketch
-                <br />
-                UI Design & Prototype
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="flex items-start md:items-center flex-col w-full my-20 md:my-24">
-        <div className="md:flex-row flex-col items-start md:items-start flex">
-          <a
-            href="#research"
-            className="flex items-center justify-center md:flex-col md:w-52 text-center"
-          >
-            <div className="font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5">
-              1
-            </div>
-            Research
-          </a>
-          <a
-            href="#workshop"
-            className="flex items-center justify-center md:flex-col md:w-52 text-center mt-5 md:mt-0"
-          >
-            <div className="font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5">
-              2
-            </div>
-            Workshop
-          </a>
-          <a
-            href="#conclusions"
-            className="flex items-center justify-center md:flex-col md:w-52  text-center mt-5 md:mt-0"
-          >
-            <div className="font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5">
-              3
-            </div>
-            Conclusions
-          </a>
-          <a
-            href="#design"
-            className="flex items-center justify-center md:flex-col md:w-52  text-center mt-5 md:mt-0"
-          >
-            <div className="font-medium rounded-full flex justify-center items-center hover:bg-white transition-all border-white hover:text-black text-white border-2 w-12 h-12 mr-5 md:mr-0 md:mb-5">
-              4
-            </div>
-            Design
-          </a>
-        </div>
-      </section>
-      <section id="research">
-        <div className="flex justify-center">
-          <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16">
-            1. Research
-          </h2>
-        </div>
-        <h2 className="text-1xl md:text-2xl mb-10 font-bold">
-          What have they asked of us?
-        </h2>
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Stakeholders</h3>
-        <p>
-          Stakeholders have expressed the need to share relevant events and
-          fairs for exporters, as well as greater segmentation in terms of
-          sectors, subsectors, regions, and export volume. There is also a
-          desire to promote the successes of regional exporters and address the
-          lack of information about past events.
-        </p>
-        <br />
-        <p>
-          They aim to provide relevant information, address daily queries,
-          advise exporters, and share details about agreements, regulations, and
-          requirements. Additionally, the focus is on informing about payments,
-          including negotiations, payment methods, and strategies to prevent
-          fraud. This comprehensive approach aims to enhance the experience and
-          satisfaction of both users and stakeholders on the export portal.
-        </p>
-        <h3 className="text-1xl md:text-2xl my-5 font-bold">Users</h3>
-        <p>
-          Users want a more visual and quickly readable format with segmented
-          content that aligns with their real needs. They seek the ability to
-          actively participate and have a voice on the platform, along with a
-          high level of customization allowing them to receive alerts, save
-          content, and choose what they want to see. Additionally, they
-          emphasize the importance of focusing on showcasing fairs and events,
-          as well as displaying advisory and training content.
-        </p>
-        <p>
-          Among their expectations, users request to see business opportunities
-          at the right moment, an interface adaptable to all devices, a preview
-          of content without having to open it, and more enticing titles. They
-          also express an interest in using different formats, such as images,
-          audio, and video. This comprehensive approach aims to enhance the user
-          experience on the export platform.
-        </p>
-        <div className="md:flex w-full md:justify-between mt-14 md:mt-20 w-full">
-          <div className="md:w-2/4 md:pr-10">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">
-              Interviews with stakeholders
-            </h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>
-                The Macro Regional Office (Southwest and Central) considers it
-                important to have a section showcasing the export growth in
-                those areas, feeling that the current newsletter content
-                excludes them and is solely directed towards Lima.
-              </li>
-              <li className="mt-2">
-                They suggest diversifying the delivery channels beyond email,
-                including WhatsApp, text messages, and other social media
-                platforms.
-              </li>
-              <li className="mt-2">
-                The newsletter should not only be informative but also
-                educational, incorporating tips and advice to enhance export
-                activities for businesses.
-              </li>
-            </ul>
-          </div>
-          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>
-                They emphasize the importance of aligning the information with
-                our country&apos;s offerings and ensuring relevance to our
-                reality, avoiding the mere replication of product launches from
-                other countries, which may not be beneficial for Peruvian
-                exporters.
-              </li>
-              <li className="mt-2">
-                The new design should allow readers to select content of
-                interest, ensuring they receive truly relevant information for
-                their businesses.
-              </li>
-              <li className="mt-2">
-                Setting an appropriate date and time for newsletter delivery is
-                crucial, as it helps readers plan and establish a reading
-                routine, generating anticipation for each edition.
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section className="w-full flex justify-center flex-col items-center mt-10">
-        <div className="w-32 my-5">
+      <section className="flex flex-col w-full px-3  md:px-5 pt-8 lg:flex-row lg:justify-around container">
+        <span className="mb-2">
+          <b>Role</b> UX Designer
+        </span>
+        <span className="mb-2">
+          <b>Client</b> PROMPERU
+        </span>
+        <div className="flex mb-2">
+          <span>
+            <b>Tools used</b>
+          </span>
           <Image
-            src={"/images/spacework.png"}
-            width={300.99}
-            height={205.71}
-            alt={"Spacework"}
-            sizes={"(max-width: 1500px) 100px"}
+            priority={true}
+            className="mx-1"
+            src="/images/icons/figma_icon.svg"
+            width={25}
+            height={26}
+            alt="Figma icon"
+            sizes={"(max-width: 25px) 80w"}
           />
-        </div>
-        <div className="md:flex md:w-[450px] md:justify-center md:items-center">
-          <div className="px-10 py-2 rounded-lg  bg-[#2E3259] md:py-5">
-            7 Stakeholders
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20" id="workshop">
-        <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center">
-          2. Workshop
-        </h2>
-        <div className="w-full">
           <Image
-            src={"/images/projects/siicex/workshop.png"}
-            width={300.99}
-            height={205.71}
-            alt={"Spacework"}
-            sizes={"(max-width: 1500px) 100px"}
-            style={{
-              width: "100%",
-              height: "auto",
-            }}
+            priority={true}
+            className="mx-1"
+            src="/images/icons/miro_icon.svg"
+            width={25}
+            height={26}
+            alt="Miro icon"
+            sizes={"(max-width: 25px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mx-1"
+            src="/images/icons/invision_icon.svg"
+            width={25}
+            height={26}
+            alt="Invision Icon"
+            sizes={"(max-width: 25px) 80w"}
           />
         </div>
       </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Workshop: Questionnaire
-        </h3>
-        <ul className="list-disc pl-5 md:mt-16">
-          <li>
-            Each attendee had to complete a questionnaire with questions about
-            their company&apos;s experience, roles, and, most importantly, their
-            user experience with the newsletter.
-          </li>
-          <li className="mt-2">
-            This questionnaire allowed them to express which is the most
-            convenient channel for them to receive the newsletter, enabling them
-            to assess the current distribution of information.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_1.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Results: Content distribution
-        </h3>
-        <span>So we can say that...</span>
-        <ul className="list-disc pl-5 ">
-          <li>
-            Nearly 50% of the participants consider it of great importance to
-            receive information quickly and on specified dates.
-          </li>
-          <li className="mt-2">
-            A large portion of the readers wishes to receive segmented
-            information according to their market interests.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_2.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Results: Most used networks
-        </h3>
-        <span>So we can say that...</span>
-        <ul className="list-disc pl-5 ">
-          <li>
-            The majority of users prefer the newsletter to be delivered via
-            email.
-          </li>
-          <li className="mt-2">
-            More people prefer reading the newsletter from the website rather
-            than their mobile phones.
-          </li>
-          <li className="mt-2">
-            50% of the attendees consider receiving the newsletter via WhatsApp
-            as a good idea to implement.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_3.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Workshop: Content Evaluation
-        </h3>
-        <p>
-          For this exercise, participants were asked to assess a series of
-          elements and actions that could appear in the new newsletter design
-          based on their importance to them.
-        </p>
-        <p>
-          The aspects to be evaluated were: Not relevant to me , could be
-          interesting to me , I am interested , I am very interested and
-          essential.
-        </p>
-        <br />
-        <p>So we can say that...</p>
-        <p>
-          Implementing a search function makes receiving and finding information
-          easier.
-        </p>
-        <ul className="list-disc pl-5 mt-8">
-          <li>
-            They wish for the newsletter to be a means by which PromPerú can
-            consistently inform exporters about new buyers to increase their
-            businesses.
-          </li>
-          <li className="mt-2">
-            They desire the content to be closely related to the type of
-            businesses they conduct.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_4.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Workshop: Sharing of information
-        </h3>
-        <ul className="list-disc pl-5 ">
-          <li>
-            The sharing of information continued, where we could discuss the
-            highest and lowest ratings made by everyone.
-          </li>
-          <li className="mt-2">
-            We could also learn through questions what design they expected to
-            receive, a design that would be more appealing to them.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_5.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Workshop: Ideal Newsletter
-        </h3>
-        <ul className="list-disc pl-5 ">
-          <li>
-            The participants are divided into two teams and are asked to design
-            a newsletter suitable for their needs as exporters.
-          </li>
-          <li className="mt-2">
-            Then, a representative is requested to present and explain how that
-            design meets their needs, especially highlighting the sections they
-            would include.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_6.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_7.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_8.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <h3 className="text-xl md:text-2xl mb-5 font-bold lg:mb-16">
-          Results: Content evaluation
-        </h3>
-        <span>Green Team </span>
-        <ul className="list-disc pl-5 ">
-          <li>
-            The design should include a menu where selecting an option displays
-            only the corresponding content.
-          </li>
-          <li className="mt-2">
-            The personalized studies section should show the possibility of
-            visualization by categories and document download in different
-            formats.
-          </li>
-          <li className="mt-2">
-            They believe that a section of interviews should be included,
-            showcasing testimonials from successful entrepreneurs and others.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_9.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-20">
-        <span>Purple Team</span>
-        <ul className="list-disc pl-5 ">
-          <li>
-            The first section should display the most relevant news for foreign
-            trade.
-          </li>
-          <li className="mt-2">
-            They propose the use of dynamic infographics that allow them to
-            dynamically showcase market opportunities in other countries.
-          </li>
-          <li className="mt-2">
-            There should be a section where the product or company of the month
-            can be featured.
-          </li>
-          <li className="mt-2">
-            It is necessary to include a download area for documents or
-            templates of formats important for the exporter.
-          </li>
-          <li className="mt-2">
-            They consider it of great importance to include the possibility of
-            sharing through social networks.
-          </li>
-        </ul>
-        <div className="w-full flex justify-center mt-10">
-          <div className="md:w-4/5 w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_10.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="w-full mt-10 md:mt-28">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold lg:mb-16">
-          What is the current situation?
-        </h3>
-        <div className="w-full flex justify-center mt-10">
-          <div className="w-full">
-            <Image
-              src={"/images/projects/siicex/workshop_11.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
-            />
-          </div>
-        </div>
-      </section>
-      <section className="mt-28 w-full" id="conclusions">
-        <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center">
-          3. Conclusions
+      <section className="flex flex-col w-full px-3  md:px-5 mt-10 lg:mt-20 container">
+        <h2 className="text-2xl text-center mb-7 font-bold lg:text-4xl">
+          My Role
         </h2>
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold lg:mb-16">
-          What do they expect?
-        </h3>
-        <div className="w-full flex justify-center mt-10">
-          <div className="w-full">
+        <p className="text-center font-light">
+          As a UX designer, I worked on the redesign of the SIICEX intelligence
+          bulletins. I was involved in all project phases, from the initial
+          research to the final presentation. My tasks included conducting
+          interviews with stakeholders and users, developing wireframes and
+          prototypes, and ensuring our solutions met high user experience
+          standards. Additionally, I facilitated workshop sessions to gather
+          insights and validate our design approach.
+        </p>
+        <div className="mt-7 lg:mt-20 flex items-center flex-col lg:flex-row w-full justify-center ">
+          <div className="lg:w-[150%] lg:flex-[0_0_150%]">
             <Image
-              src={"/images/projects/siicex/workshop_12.png"}
-              width={300.99}
-              height={205.71}
-              alt={"Spacework"}
-              sizes={"(max-width: 1500px) 100px"}
-              style={{
-                width: "100%",
-                height: "auto",
-              }}
+              priority={true}
+              className="hidden lg:block"
+              src="/images/projects/siicex/my_role_images_desktop.png"
+              width={7680}
+              height={216}
+              alt="screenshot_1"
             />
           </div>
+          <Image
+            priority={true}
+            className="lg:hidden"
+            src="/images/projects/siicex/screenshot_1.png"
+            width={600}
+            height={216}
+            alt="screenshot_1"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="lg:ml-[-200px] lg:mr-10 mt-2 lg:hidden"
+            src="/images/projects/siicex/screenshot_2.png"
+            width={600}
+            height={216}
+            alt="screenshot_2"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:mr-[-200px] lg:ml-10 lg:hidden"
+            src="/images/projects/siicex/screenshot_3.png"
+            width={600}
+            height={216}
+            alt="screenshot_3"
+            sizes={"(max-width: 600px) 80w"}
+          />
         </div>
       </section>
-      <section className="md:mt-28 mt-16 w-full">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">First Insight</h3>
-        <h4 className="text-1xl md:text-3xl mb-10 text-center md:font-thin">
-          &quot;The information they share with us is very generic; we want
-          something with specialized sources.&quot;
-        </h4>
-        <div className="text-1xl md:text-2xl mb-10 font-bold">
-          &quot;Industry Segmentation&quot;
+      <section className="flex flex-col w-full px-3  md:px-5 mt-10 container lg:mt-28">
+        <h2 className="text-2xl font-bold text-center lg:text-4xl">
+          Design Process
+        </h2>
+        <b className="mt-5 text-center lg:text-xl">
+          Research Desk & User Research
+        </b>
+        <p className="font-light text-center">
+          Kick- off / Benchmark / Stakeholders Interviews / Content Tree /
+          Workshop / Goal Statement / Brainstorming
+        </p>
+        <b className="mt-2 text-center lg:text-xl lg:mt-10">
+          UI Design Desk & User Research
+        </b>
+        <p className="font-light text-center">
+          Wireframes / Visual Design / Prototype
+        </p>
+        <b className="mt-2 text-center lg:text-xl lg:mt-10">Interaction Desk</b>
+        <p className="font-light text-center">
+          Survey Insight / Product Delivery
+        </p>
+      </section>
+      <section className="flex flex-col w-full px-3 md:px-5 mt-10 lg:items-center container lg:mt-20">
+        <h2 className="text-2xl font-bold text-center lg:text-4xl">
+          User research
+        </h2>
+        <p className="mt-5 font-light text-center">
+          The importance of including a section reflecting the growth of exports
+          in the southwest and central regions is emphasized, along with
+          diversifying the distribution channels of the newsletter, including
+          WhatsApp and social media. Additionally, there is a need for a
+          newsletter that combines informative and educational content, tailored
+          to the Peruvian reality, and allows users to select relevant content
+          for their businesses.
+        </p>
+        <div className="flex mt-5 lg:mt-10">
+          <div>
+            <b>Interviewees:</b>
+          </div>
+          <div className="flex-1 ml-4 font-light">
+            <span> 7 stakeholders</span>
+          </div>
         </div>
+        <div className="flex mt-2">
+          <div>
+            <b>Interview Method:</b>
+          </div>
+          <div className="flex-1 ml-4 font-light">
+            <span> Qualitative research; in-depth face-to-face interviews</span>
+          </div>
+        </div>
+        <div className="w-full flex justify-center lg:mt-10 lg:px-16">
+          <Image
+            priority={true}
+            className="mt-10 hidden lg:block"
+            src="/images/projects/siicex/reviews_desktop.png"
+            width={5780}
+            height={1013}
+            alt="Reviews"
+            sizes={"(max-width: 5780px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-10 lg:hidden"
+            src="/images/projects/siicex/reviews_mobile.png"
+            width={400}
+            height={1013}
+            alt="Reviews"
+            sizes={"(max-width: 400px) 80w"}
+          />
+        </div>
+      </section>
 
-        <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
-        <p>
-          Nuestros usuarios se mantienen informados todo el tiempo, suelen leer
-          distintos semanarios, boletines y diarios especializados por lo cual
-          no les llama la atención la información repetitiva.
+      <section className="flex flex-col w-full px-3  md:px-5 mt-10 lg:mt-40 container lg:items-center">
+        <h2 className="text-2xl font-bold text-center lg:text-4xl">Workshop</h2>
+        <p className="mt-2 font-light text-center">
+          The new portal wants to gather and show information in a clear way,
+          especially for experienced exporters. It aims to make PROMPERÚ
+          well-known for supporting Peruvian exporters, organize information for
+          different users, and be ready for future improvements.
         </p>
-        <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
-        <p>
-          Users have mentioned that the information they find in the newsletter
-          is not very relevant to them. They feel they could easily find such
-          information in specialized newspapers like Gestión or Semana Económica
-          (it is clear that they stay informed consistently based on their
-          recognition of the news).
-        </p>
-        <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
-        <p>
-          Provide specialized information that is not a replica of other
-          sources, and above all, is of interest to our exporters.
-        </p>
-        <div className="text-1xl md:text-2xl my-10 font-bold">
-          Motivations vs. Pain Points
-        </div>
-        <div className="md:flex w-full md:justify-between my-8 w-full">
-          <div className="md:w-2/4 md:pr-10">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">Motivations</h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>Enhancing knowledge</li>
-              <li className="mt-2">
-                Learning about exports in other countries.
-              </li>
-              <li className="mt-2">
-                Gaining insights into regulations and norms in target countries
-                for potential product shipments.
-              </li>
-              <li className="mt-2">
-                Acquiring specialized and accurate information.
-              </li>
-            </ul>
+        <div className="flex mt-5 lg:mt-10">
+          <div>
+            <b>Participants :</b>
           </div>
-          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">Pain Points</h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>Lack of specialized information.</li>
-              <li className="mt-2">
-                Absence of data to facilitate learning about export topics.
-              </li>
-              <li className="mt-2">
-                Insufficient details on training sessions and events.
-              </li>
-            </ul>
+          <div className="flex-1 ml-4 font-light">
+            <span> 10 exporters</span>
           </div>
         </div>
-        <p>
-          Therefore, The industry segmentation will help exporters find
-          immediate information according to their interests.
-        </p>
-      </section>
-      <section className="md:mt-28 mt-16 w-full" id="conclusions">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Second Insight</h3>
-        <h4 className="text-1xl md:text-3xl mb-10 md:font-thin text-center">
-          &quot;PromPerú has a lot of valuable information for exports, but
-          despite that, it&apos;s difficult to navigate and find what I
-          need.&quot;
-        </h4>
-        <div className="text-1xl md:text-2xl mb-10 font-bold">
-          &quot;They don&apos;t find the information they want despite its
-          existence.&quot;
-        </div>
-
-        <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
-        <p>
-          &quot;The newsletter readers have many activities to carry out in
-          their companies, so allocating an extended time for reading the
-          newsletter is impossible for them...&quot;
-        </p>
-        <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
-        <p>
-          &quot;They share with us that when they enter the newsletter and want
-          to obtain information that benefits their businesses, it is very
-          difficult for them to reach it since it is not segmented according to
-          the interests of their sector. Due to the lack of time, they cannot
-          review all the articles, which harms them as they recognize that
-          PromPerú provides valuable and reliable information.&quot;
-        </p>
-        <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
-        <p>
-          &quot;Providing a newsletter with segmented information so that
-          readers can quickly find content of interest to them.&quot;
-        </p>
-        <div className="text-1xl md:text-2xl my-10 font-bold">
-          Motivations vs. Pain Points
-        </div>
-        <div className="md:flex w-full md:justify-between my-8 w-full">
-          <div className="md:w-2/4 md:pr-10">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">Motivations</h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>They want to know the content provided by PromPerú.</li>
-              <li className="mt-2">
-                Receive information validated by export specialists.
-              </li>
-              <li className="mt-2">
-                Reading the newsletter regularly can help them stay informed
-                about PromPerú&apos;s activities that benefit their company.
-              </li>
-            </ul>
+        <div className="flex mt-2">
+          <div>
+            <b>Method:</b>
           </div>
-          <div className="mt-10 md:mt-0 md:pl-10 md:w-2/4">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">Pain Points</h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>
-                The organization of information is inadequate and does not
-                highlight topics of interest for the exporter.
-              </li>
-              <li className="mt-2">
-                The information is unappealing, with very small images, and the
-                relevant links are not visible.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <p>
-          Therefore, Displaying a friendly and intuitive design will help
-          generate more interest among readers, allowing them to not only read
-          articles faster but also understand them better.
-        </p>
-      </section>
-      <section className="md:mt-28 mt-16 w-full" id="conclusions">
-        <h3 className="text-1xl md:text-2xl mb-5 font-bold">Third Insight</h3>
-        <h4 className="text-1xl md:text-3xl mb-10 md:font-thin text-center">
-          &quot;We are known for being very visual; we don&apos;t read much
-          anymore.&quot;
-        </h4>
-        <div className="text-1xl md:text-2xl mb-10 font-bold">
-          &quot;They assimilate information better in a dosed manner.&quot;
-        </div>
-        <h3 className="text-1xl md:text-2xl mb-8 font-bold">Context</h3>
-        <p>
-          &quot;Users have told us that they no longer read or find textual
-          information less appealing. They prefer to see infographics, graphics,
-          and other dynamic visual materials.&quot;
-        </p>
-        <h3 className="text-1xl md:text-2xl my-8 font-bold">Problem</h3>
-        <p>
-          &quot;The newsletter information has too much text, small images,
-          lacks visuals within the news, and infographics are not immediately
-          visible but need to be searched for. Infographics are equally hidden
-          as the newsletters within SIICEX.&quot;
-        </p>
-        <h3 className="text-1xl md:text-2xl my-8 font-bold">Solution</h3>
-        <p>
-          &quot;Enhance the way information is conveyed in the newsletter with
-          statistical graphics, brief information capsules, infographics,
-          presentations, animations, videos, etc.&quot;
-        </p>
-        <div className="text-1xl md:text-2xl my-10 font-bold">
-          Motivations vs. Pain Points
-        </div>
-        <div className="md:flex w-full md:justify-between my-8 w-full">
-          <div className="md:w-2/4 md:pr-10">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">Motivations</h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>View information quickly.</li>
-              <li className="mt-2">
-                Better understand and assimilate the shared information.
-              </li>
-              <li className="mt-2">
-                Prefer interactive statistics and graphics.
-              </li>
-            </ul>
+          <div className="flex-1 ml-4 font-light">
             <span>
-              They would like the shared information to be less dull and
-              clearer.
+              {" "}
+              Questionnaire / Content assessment / Group discussion / Design of
+              the ideal newsletter conducted by users
             </span>
           </div>
-          <div className="mt-10 md:pl-10 md:w-2/4">
-            <h3 className="text-1xl md:text-2xl mb-5 font-bold">Pain Points</h3>
-            <ul className="list-disc pl-5 md:mt-16">
-              <li>
-                TThere is nothing visually appealing in the newsletter to
-                capture their attention.
-              </li>
-              <li className="mt-2">
-                They do not assimilate information as well as they would with
-                interactive graphics.
-              </li>
-              <li className="mt-2">The interface is not attractive at all.</li>
-            </ul>
+        </div>
+        <div className="flex mt-2">
+          <div>
+            <b>Results:</b>
+          </div>
+          <div className="flex-1 ml-4 font-light">
+            <span>
+              {" "}
+              We obtained the content distribution and the most commonly used
+              social networks in order of priority.
+            </span>
           </div>
         </div>
-        <p>
-          Therefore, What users need is a newsletter with an interesting and
-          interactive interface, especially with specialized information. This
-          will engage users with the content in the newsletter, providing them
-          with valuable insights.
-        </p>
       </section>
-      <section className="mb-20 md:mt-32 w-full" id="design">
-        <h2 className="text-2xl md:text-5xl mb-5 font-bold lg:mb-16 text-center">
-          4. Design
+      <section className="flex flex-col w-full px-3  md:px-5 mt-10 lg:mt-40 container lg:items-center">
+        <h2 className="text-2xl font-bold text-center lg:text-4xl">Insights</h2>
+        <p className="mt-2 font-light text-center">
+          Based on the workshop with real users...
+        </p>
+        <div className="mt-10 lg:mt-20 flex flex-col items-center lg:flex-row lg:flex-wrap lg:justify-between lg:w-[1050px] lg:h-[670px] lg:items-start">
+          <div className="rounded-2xl border-4 border-white flex flex-col items-center p-8 max-w-[430px] lg:max-w-[500px] lg:flex-[0_0_50%] lg:box-border  bg-gradient-to-b from-[#2B2F53] to-[#1D1C34] from-0% to-20%">
+            <Image
+              priority={true}
+              src="/images/icons/bulb_icon.png"
+              width={50}
+              height={51}
+              alt="Reviews"
+              sizes={"(max-width: 72px) 80w"}
+            />
+            <h3 className="text-lg font-bold text-center mt-3">
+              "The information provided to us is very generic; we want something
+              with specialized sources."
+            </h3>
+            <p className=" text-center mt-3 font-light">
+              Provide specialized information that is not replicated in other
+              media sources and is particularly relevant to our exporters.
+            </p>
+          </div>
+          <div className="rounded-2xl border-4 border-white flex flex-col items-center p-8 max-w-[430px] lg:max-w-[500px] mt-5 lg:mt-0 lg:flex-[0_0_50%] lg:box-border bg-gradient-to-b from-[#2B2F53] to-[#1D1C34] from-0% to-20%">
+            <Image
+              priority={true}
+              src="/images/icons/bulb_icon.png"
+              width={50}
+              height={51}
+              alt="Reviews"
+              sizes={"(max-width: 72px) 80w"}
+            />
+            <h3 className="text-lg font-bold text-center mt-3">
+              "PromPerú has a lot of valuable information for exports, but
+              despite that, it's difficult to find what I need."
+            </h3>
+            <p className=" text-center mt-3 font-light">
+              Proposing a segmented newsletter to ease access to relevant
+              information for readers due to the current lack of segmentation.
+            </p>
+          </div>
+          <div className="rounded-2xl border-4 border-white flex flex-col items-center p-8 max-w-[430px] lg:max-w-[500px] mt-5 lg:mt-0 lg:flex-[0_0_50%] lg:box-border bg-gradient-to-b from-[#2B2F53] to-[#1D1C34] from-0% to-20%">
+            <Image
+              priority={true}
+              src="/images/icons/bulb_icon.png"
+              width={50}
+              height={51}
+              alt="Reviews"
+              sizes={"(max-width: 72px) 80w"}
+            />
+            <h3 className="text-lg font-bold text-center mt-3">
+              "We are characterized by being very visual; we don't read much
+              anymore."
+            </h3>
+            <p className=" text-center mt-3 font-light">
+              Users prefer visual content such as infographics and dynamic
+              visuals over text-heavy information, indicating a need to enhance
+              the newsletter with more engaging visual elements like graphics,
+              infographics, and videos.
+            </p>
+          </div>
+          <div className="rounded-2xl border-4 border-white flex flex-col items-center p-8 max-w-[430px] lg:max-w-[500px] mt-5 lg:mt-0 lg:flex-[0_0_50%] lg:box-border bg-gradient-to-b from-[#2B2F53] to-[#1D1C34] from-0% to-20%">
+            <Image
+              priority={true}
+              src="/images/icons/bulb_icon.png"
+              width={50}
+              height={51}
+              alt="Reviews"
+              sizes={"(max-width: 72px) 80w"}
+            />
+            <h3 className="text-lg font-bold text-center mt-3">
+              "We would like to be notified about fairs and training sessions
+              through the newsletter."
+            </h3>
+            <p className=" text-center mt-3 font-light">
+              The newsletter should inform users about upcoming events, fairs,
+              training sessions, and more, catering to their interest in
+              furthering their knowledge about exportation.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col w-full px-3 md:px-5 mt-10 lg:mt-32 items-center container">
+        <h2 className="text-2xl font-bold text-center mb-5 lg:mb-20 lg:text-4xl">
+          Information architecture
         </h2>
-        <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">
-          Wireframe
-        </h3>
-        <Slider
-          imageUrls={[
-            "/images/projects/siicex/wireframes/wireframe_1.jpg",
-            "/images/projects/siicex/wireframes/wireframe_2.png",
-            "/images/projects/siicex/wireframes/wireframe_3.jpg",
-            "/images/projects/siicex/wireframes/wireframe_4.jpg",
-            "/images/projects/siicex/wireframes/wireframe_5.jpg",
-          ]}
+        <Image
+          priority={true}
+          src="/images/projects/siicex/information_architecture.png"
+          width={3404}
+          height={2907}
+          alt="Information architecture"
+          sizes={"(max-width: 72px) 80w"}
         />
-        <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">Mockup</h3>
-        <Slider
-          imageUrls={[
-            "/images/projects/siicex/mockups/mockup_1.png",
-            "/images/projects/siicex/mockups/mockup_2.png",
-            "/images/projects/siicex/mockups/mockup_3.png",
-            "/images/projects/siicex/mockups/mockup_4.png",
-            "/images/projects/siicex/mockups/mockup_5.png",
-          ]}
+      </section>
+      <section className="flex flex-col w-full px-3 md:px-5 mt-10 lg:mt-32 items-center container">
+        <h2 className="text-2xl font-bold text-center mb-5 lg:text-4xl">
+          Interview Method:
+        </h2>
+        <p className="text-center font-light">
+          Qualitative research; in-depth face-to-face interviews
+        </p>
+        <Image
+          priority={true}
+          className="hidden lg:block lg:mt-20"
+          src="/images/projects/siicex/the_solution_desktop.png"
+          width={6000}
+          height={420}
+          alt="The solution image"
+          sizes={"(max-width: 366px) 80w"}
         />
-        <h3 className="text-1xl md:text-2xl font-bold mb-10 mt-10">
-          Prototype
+        <Image
+          priority={true}
+          className="lg:hidden mt-10"
+          src="/images/projects/siicex/the_solution.png"
+          width={500}
+          height={420}
+          alt="he solution image"
+          sizes={"(max-width: 366px) 80w"}
+        />
+      </section>
+      <section className="flex flex-col w-full px-3  md:px-5 mt-10 lg:mt-32 items-center container">
+        <h2 className="text-2xl font-bold text-center mb-5 lg:text-4xl">
+          Personalised Recommendations
+        </h2>
+        <p className="font-light">
+          Based on the in-depth interviews, user wants
+        </p>
+        <h3 className="text-xl mt-5 mb-2 font-bold lg:text-2xl lg:mt-20">
+          Prioritize information
         </h3>
-        <Slider
-          imageUrls={[
-            "/images/projects/siicex/prototypes/prototype_1.jpg",
-            "/images/projects/siicex/prototypes/prototype_2.jpg",
-            "/images/projects/siicex/prototypes/prototype_3.jpg",
-            "/images/projects/siicex/prototypes/prototype_4.jpg",
-            "/images/projects/siicex/prototypes/prototype_5.jpg",
-            "/images/projects/siicex/prototypes/prototype_6.jpg",
-          ]}
+        <p className="font-light lg:w-[630px] lg:mt-5">
+          Improved site architecture allows self-service for exporters,
+          providing quick answers. It requires intelligent navigation, easy
+          search, and tailored support.
+        </p>
+        <div className="mt-10 lg:mt-20">
+          <Image
+            priority={true}
+            className="hidden lg:block"
+            src="/images/projects/siicex/prioritize_information_desktop.png"
+            width={6260}
+            height={276}
+            alt="Prioritize information imagenes"
+            sizes={"(max-width: 600px) 80w"}
+          />
+
+          <Image
+            priority={true}
+            className="lg:hidden"
+            src="/images/projects/siicex/information_1.png"
+            width={600}
+            height={276}
+            alt="Information 1"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:hidden"
+            src="/images/projects/siicex/information_2.png"
+            width={600}
+            height={276}
+            alt="Information 2"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:hidden"
+            src="/images/projects/siicex/information_3.png"
+            width={600}
+            height={276}
+            alt="Information 3"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:hidden"
+            src="/images/projects/siicex/information_4.png"
+            width={600}
+            height={276}
+            alt="Information 4"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:hidden"
+            src="/images/projects/siicex/information_5.png"
+            width={600}
+            height={276}
+            alt="Information 4"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:hidden"
+            src="/images/projects/siicex/information_6.png"
+            width={600}
+            height={276}
+            alt="Information 4"
+            sizes={"(max-width: 600px) 80w"}
+          />
+          <Image
+            priority={true}
+            className="mt-2 lg:hidden"
+            src="/images/projects/siicex/information_7.png"
+            width={600}
+            height={276}
+            alt="Information 4"
+            sizes={"(max-width: 600px) 80w"}
+          />
+        </div>
+        <h3 className="text-xl mt-10 text-center font-semibold lg:text-2xl lg:mt-32">
+          Mockups and Prototypes
+        </h3>
+        <p className="font-light text-center mt-20">Desktop version</p>
+        <div className="w-full flex justify-center">
+          <div className="lg:w-[150%] lg:flex-[0_0_150%]">
+            <Image
+              priority={true}
+              className="mt-10 hidden lg:block lg:my-20"
+              src="/images/projects/siicex/mockups_images_desktop.png"
+              width={8000}
+              height={694}
+              alt="Mockups"
+              sizes={"(max-width: 500px) 80w"}
+            />
+          </div>
+        </div>
+        <Image
+          priority={true}
+          className="mt-10 lg:hidden mb-20"
+          src="/images/projects/siicex/mockups_images_responsive.png"
+          width={500}
+          height={694}
+          alt="Mockups"
+          sizes={"(max-width: 500px) 80w"}
+        />
+        <p className="font-light text-center">Responsive version</p>
+        <div className="w-full flex justify-center">
+          <div className="lg:w-[150%] lg:flex-[0_0_150%]">
+            <Image
+              priority={true}
+              className="mt-10 hidden lg:block lg:my-20"
+              src="/images/projects/siicex/mockups_responsive_images_desktop.png"
+              width={8000}
+              height={694}
+              alt="Mockups"
+              sizes={"(max-width: 500px) 80w"}
+            />
+          </div>
+        </div>
+        <Image
+          priority={true}
+          className="mt-10 lg:hidden mb-20"
+          src="/images/projects/siicex/mockups_responsive_images_responsive.png"
+          width={500}
+          height={694}
+          alt="Mockups"
+          sizes={"(max-width: 500px) 80w"}
         />
       </section>
     </main>

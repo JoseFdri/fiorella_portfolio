@@ -8,20 +8,20 @@ export const projects = [
     imgUrl: "/images/portal.png",
   },
   {
-    name: "Turismo In",
-    role: "UR | UX",
-    slug: "turismo_in",
-    description:
-      "Web redesign aimed at promoting tourism in Peru for students and professionals, enhancing usability and information.",
-    imgUrl: "/images/turismo.png",
-  },
-  {
     name: "Newsletters SIICEX",
     role: "UX | UI",
     slug: "siicex",
     description:
       "Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.",
     imgUrl: "/images/siicex.png",
+  },
+  {
+    name: "Turismo In",
+    role: "UR | UX",
+    slug: "turismo_in",
+    description:
+      "Web redesign aimed at promoting tourism in Peru for students and professionals, enhancing usability and information.",
+    imgUrl: "/images/turismo.png",
   },
   {
     name: "Casa Andina",

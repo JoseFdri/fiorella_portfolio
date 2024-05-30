@@ -27,21 +27,34 @@ const Card: FC<CardProps> = ({
   const { imgUrl, name, role, description, slug } = project;
 
   return (
-    <Link className={`${classes?.join(" ")} hover:scale-75 transition ease-in-out`} href={`${slug ? `/projects/${slug}` : "#"} `}>
-      <div className={`${subClasses?.join(" ")} relative lg:p-16 p-2 bg-gradient-to-br from-[#151231] to-[#10172f] from-60% to-78% rounded-lg `}>
-        <Image
-          src={imgUrl}
-          height={height}
-          width={width}
-          alt={name}
-          sizes={sizes}
-        />
-      </div>
-      <div className={`flex flex-col lg:mt-10 mt-5 ${subClasses?.join(" ")}`}>
-          <h2 className="font-bold lg:text-4xl text-2xl ">{name}</h2>
+    <div className={`${classes?.join(" ")}`}>
+      <div>
+        <Link
+          href={`${slug ? `/projects/${slug}` : "#"} `}
+          className={`${subClasses?.join(
+            " "
+          )} group block lg:p-16 p-2 bg-gradient-to-br from-[#151231] to-[#10172f] from-60% to-78% rounded-lg overflow-hidden`}
+        >
+          <Image
+            src={imgUrl}
+            className="group-hover:scale-[1.1] transition ease-in-out"
+            height={height}
+            width={width}
+            alt={name}
+            sizes={sizes}
+          />
+        </Link>
+        <div className={`flex flex-col lg:mt-10 mt-5 ${subClasses?.join(" ")}`}>
+          <Link
+            href={`${slug ? `/projects/${slug}` : "#"} `}
+            className="font-bold lg:text-4xl text-2xl "
+          >
+            {name}
+          </Link>
           <p className="lg:text-2xl text-xl font-thin mt-5">{description}</p>
         </div>
-    </Link>
+      </div>
+    </div>
   );
 };
 
