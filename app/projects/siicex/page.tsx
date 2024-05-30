@@ -282,8 +282,8 @@ export default async function Project() {
               sizes={"(max-width: 72px) 80w"}
             />
             <h3 className="text-lg font-bold text-center mt-3">
-              "The information provided to us is very generic; we want something
-              with specialized sources."
+            &quot;The information provided to us is very generic; we want something
+              with specialized sources.&quot;
             </h3>
             <p className=" text-center mt-3 font-light">
               Provide specialized information that is not replicated in other
@@ -300,8 +300,8 @@ export default async function Project() {
               sizes={"(max-width: 72px) 80w"}
             />
             <h3 className="text-lg font-bold text-center mt-3">
-              "PromPerú has a lot of valuable information for exports, but
-              despite that, it's difficult to find what I need."
+            &quot;PromPerú has a lot of valuable information for exports, but
+              despite that, it&apos;s difficult to find what I need.&quot;
             </h3>
             <p className=" text-center mt-3 font-light">
               Proposing a segmented newsletter to ease access to relevant
@@ -318,8 +318,8 @@ export default async function Project() {
               sizes={"(max-width: 72px) 80w"}
             />
             <h3 className="text-lg font-bold text-center mt-3">
-              "We are characterized by being very visual; we don't read much
-              anymore."
+            &quot;We are characterized by being very visual; we don&apos;t read much
+              anymore.&quot;
             </h3>
             <p className=" text-center mt-3 font-light">
               Users prefer visual content such as infographics and dynamic
@@ -338,8 +338,8 @@ export default async function Project() {
               sizes={"(max-width: 72px) 80w"}
             />
             <h3 className="text-lg font-bold text-center mt-3">
-              "We would like to be notified about fairs and training sessions
-              through the newsletter."
+            &quot;We would like to be notified about fairs and training sessions
+              through the newsletter.&quot;
             </h3>
             <p className=" text-center mt-3 font-light">
               The newsletter should inform users about upcoming events, fairs,
