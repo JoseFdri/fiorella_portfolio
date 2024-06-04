@@ -8,14 +8,6 @@ export const projects = [
     imgUrl: "/images/portal.png",
   },
   {
-    name: "Newsletters SIICEX",
-    role: "UX | UI",
-    slug: "siicex",
-    description:
-      "Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.",
-    imgUrl: "/images/siicex.png",
-  },
-  {
     name: "Turismo In",
     role: "UR | UX",
     slug: "turismo_in",
@@ -54,5 +46,13 @@ export const projects = [
     description:
       "This project aims to streamline employees' access to government benefits in the United States through an intuitive and efficient questionnaire.",
     imgUrl: "/images/rockerbox.png",
+  },
+  {
+    name: "Newsletters SIICEX",
+    role: "UX | UI",
+    slug: "siicex",
+    description:
+      "Seeking to enhance newsletters by focusing on user experience and efficient distribution of specialized information.",
+    imgUrl: "/images/siicex.png",
   },
 ];
