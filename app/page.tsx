@@ -10,7 +10,7 @@ export default function Home() {
           Crafting memorable digital experiences with a user centered approach.
         </h1>
         <p className="w-full font-thin lg:mt-20 mt-10 text-lg text-center">
-          Passionate about user experience design with nearly four years of
+          Passionate about user experience design with many years of
           experience in crafting impactful digital solutions. My focus is on
           blending attractive aesthetics with intuitive functionality, always
           with the user at the heart of each design. Throughout my career,

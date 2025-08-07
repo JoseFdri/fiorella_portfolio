@@ -67,7 +67,7 @@ export default function RootLayout({
           <div className="container lg:justify-center lg:flex lg:py-10 lg:flex-row-reverse lg:flex-row flex flex-col lg:justify-between items-center px-3 mt-5 lg:mt-0">
             <NavBar />
             <span className="mt-5 lg:mt-0">
-              © {new Date().getFullYear()} All rights reserved.
+              Fiorella Velazco. Designed & built with ❤️.
             </span>
           </div>
         </footer>
